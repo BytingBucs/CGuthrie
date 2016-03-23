@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.comments p:nth-child(even){
+    background: lavender;
+}
+
+.comments p:nth-child(odd){
+    background: gainsboro;
+}
+
+.comment_input span:hover {
+    cursor: pointer;
+}
