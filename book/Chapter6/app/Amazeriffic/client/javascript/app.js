@@ -1,8 +1,10 @@
 var main = function (toDoObjects) {
     "use strict";
-    
+
     var toDos = toDoObjects.map(function (toDo) {
-        return toDo.description;
+          // we'll just return the description
+          // of this toDoObject
+          return toDo.description;
     });
 
     $(".tabs a span").toArray().forEach(function (element) {
@@ -20,21 +22,19 @@ var main = function (toDoObjects) {
             $("main .content").empty();
 
             if ($element.parent().is(":nth-child(1)")) {
-                // newest first, so we have to go through
-                // the array backwards
                 $content = $("<ul>");
                 for (i = toDos.length-1; i >= 0; i--) {
                     $content.append($("<li>").text(toDos[i]));
                 }
             } else if ($element.parent().is(":nth-child(2)")) {
-                // oldest first, so we go through the array forwards
                 $content = $("<ul>");
                 toDos.forEach(function (todo) {
                     $content.append($("<li>").text(todo));
                 });
-            } else if ($element.parent().is(":nth-child(3)")){
+
+            } else if ($element.parent().is(":nth-child(3)")) {
                 var tags = [];
-                
+
                 toDoObjects.forEach(function (toDo) {
                     toDo.tags.forEach(function (tag) {
                         if (tags.indexOf(tag) === -1) {
@@ -43,31 +43,33 @@ var main = function (toDoObjects) {
                     });
                 });
                 console.log(tags);
-                
+
                 var tagObjects = tags.map(function (tag) {
                     var toDosWithTag = [];
-                    
+
                     toDoObjects.forEach(function (toDo) {
                         if (toDo.tags.indexOf(tag) !== -1) {
                             toDosWithTag.push(toDo.description);
                         }
                     });
-                    
+
                     return { "name": tag, "toDos": toDosWithTag };
                 });
-                
+
                 tagObjects.forEach(function (tag) {
                     var $tagName = $("<h3>").text(tag.name),
                         $content = $("<ul>");
-                        
+
+
                     tag.toDos.forEach(function (description) {
                         var $li = $("<li>").text(description);
                         $content.append($li);
                     });
-                    
+
                     $("main .content").append($tagName);
                     $("main .content").append($content);
                 });
+
             } else if ($element.parent().is(":nth-child(4)")) {
                 var $input = $("<input>").addClass("description"),
                     $inputLabel = $("<p>").text("Description: "),
@@ -77,10 +79,18 @@ var main = function (toDoObjects) {
 
                 $button.on("click", function () {
                     var description = $input.val(),
-                        tags = $tagInput.val().split(",");
+                        tags = $tagInput.val().split(","),
+                        // create the new to-do item
+                        newToDo = {"description":description, "tags":tags};
                                  
                     toDoObjects.push({"description":description, "tags":tags});
 
+                    // here we'll do a quick post to our todos route
+                    $.post("todos", newToDo, function (response) {
+                        console.log("We posted and the server responded!");
+                        console.log(response);
+                    });
+                    
                     // update toDos
                     toDos = toDoObjects.map(function (toDo) {
                         return toDo.description;
