@@ -1,8 +1,8 @@
-var poker = require("./poker.js"),
-	express = require("express"),
+var express = require("express"),
 	http = require("http"),
 	app = express(),
     parser = require("body-parser"),
+    poker = require("./poker.js"),
     hand = [];
 
 app.use(express.static(__dirname + "/client"));
@@ -18,12 +18,27 @@ app.get("/hand.json", function (req, res) {
 });
 
 app.post("/hand", function (req, res) {
-    var newHand = req.body;
-
-    console.log(result);
 
     var pair = poker.containsPair(result),
-    	threeOfAKind = poker.containsThreeOfAKind(result);
+        twoPair = poker.containsTwoPair(result),
+    	threeOfAKind = poker.containsThreeOfAKind(result),
+        fourOfAKind = poker.containsFourOfAKind(result);
+    	// insert more hands here
+        highestRanked;
 
-    hand.push(newHand);
+    if (fourOfAKind === true) {
+        highestRanked = "Four of a Kind";
+    }
+    else if (threeOfAKind === true) {
+        highestRanked = "Three of a Kind";
+    }
+    else if (twoPair === true) {
+        highestRanked = "Two Pairs";
+    }
+    else if (twoPair === true) {
+        highestRanked = "Pair";
+    }
+    else {
+        highestRanked = "That is not a winning hand";
+    }
 });
