@@ -6,25 +6,29 @@ var poker = {},
 
 containsNTimes = function (arrayHand, strRank, numberTimes) {
     var occured = false,
-        counter = 0;
-
-    array.forEach(function (card) {
+        count = 0;
+        
+    arrayHand.forEach(function (card) {
         if ( card === strRank ) {
             count += 1;
-        };
+        }
     });
 
     if ( count === numberTimes ) {
-        occuredN = true;
-    };
+        occured = true;
+    }
 
     return occured;
+};
+
+poker.getHand = function(hand){
+    return hand;
 };
 
 poker.containsPair = function (hand) {
     var result = false,
         handRanks;
-        
+    
     handRanks = hand.map(function (card) {
         return card.rank;
     });
