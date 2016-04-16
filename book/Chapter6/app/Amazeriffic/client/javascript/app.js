@@ -93,13 +93,13 @@ var main = function (toDoObjects) {
                     $inputLabel = $("<p>").text("Description: "),
                     $tagInput = $("<input>").addClass("tags"),
                     $tagLabel = $("<p>").text("Tags: "),
-                    $button = $("<span>").text("+"),
+                    $button = $("<button>").text("+"),
                     $content = $("<div>");
                 
                 $button.on("click", function () {
                     var description = $input.val(),
                         tags = $tagInput.val().split(","),
-                        newToDo = {"description":description, "tags":tags};
+                        newToDo = {"description": description, "tags": tags};
                     
                     $.post("todos", newToDo, function (reuslt) {
                         $input.val("");
@@ -133,10 +133,10 @@ var main = function (toDoObjects) {
             
             $(".tabs a span").removeClass("active");
             $spanElement.addClass("active");
-            $("main .container").empty();
+            $("main .content").empty();
             
             tab.content(function (err, $content) {
-                $("main .container").append($content);
+                $("main .content").append($content);
             });
             
             return false;

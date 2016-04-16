@@ -9,7 +9,7 @@ var express = require("express"),
 app.use(express.static(__dirname + "/client"));
 app.use(bodyParser.urlencoded({extended:true}));
 
-http.createServer(app).listen(process.env.PORT || 3000);
+http.createServer(app).listen(3000);
 
 // app routes
 app.get("/todos.json", ToDosController.index);
