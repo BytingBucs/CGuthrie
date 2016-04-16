@@ -10,16 +10,17 @@ var main = function (toDoObjects) {
     
     tabs = [];
     
+    // newest tab
 	tabs.push({
 		"name":"Newest",
 		"content":function (callback) {
 			$.get("todos.json", function (toDoObjects) {
 				var $content = $("<ul>");
                 
-                toDoObjects.slice().reverse().forEach(function(todo) {
-                    $content.append($todoListItem);
-                });
-				callback($content);
+                for(var i = toDoObjects.length-1; i >= 0; i--) {
+                    $content.append($("<li>").text(toDoObjects[i].description));
+                }
+				callback(null, $content);
 			}).fail(function (jqXHR, textStatus, error) {
 				callback(error, null);
 			});
@@ -35,7 +36,7 @@ var main = function (toDoObjects) {
                     $content.append($("<li>").text(todo));
                 });
                 
-                callback($content);
+                callback(null, $content);
             }).fail(function (jqXHR, textStatus, error) {
                 callback(error, null);
             });
@@ -77,7 +78,7 @@ var main = function (toDoObjects) {
 						$content.append($li);
 					});
 					
-					callback($content);
+					callback(null, $content);
 				});
 			}).fail(function (jqXHR, textStatus, error) {
                 callback(error, null);
@@ -115,7 +116,7 @@ var main = function (toDoObjects) {
                 $content.append($tagInput);
                 $content.append($button);
                 
-                callback($content);
+                callback(null, $content);
             }).fail(function (jqXHR, textStatus, error) {
                 callback(error, null);
             });
