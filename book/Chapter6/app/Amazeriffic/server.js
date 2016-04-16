@@ -1,60 +1,29 @@
 var express = require("express"),
     http = require("http"),
-    // import the mongoose library
-    mongoose = require("mongoose"),
     app = express(),
-    services,
-    mongoUrl = "mongodb://localhost/amazeriffic";
+    mongoose = require("mongoose"),
+    ToDosController = require("./controllers/todos_controller.js"),
+	usersController = require("./controllers/users_controller.js"),
+    bodyParser = require("body-parser");
 
 app.use(express.static(__dirname + "/client"));
-app.use(express.bodyParser());
-app.use(parser.urlencoded({extended:true}));
-
-if (process.env.VCAP_SERVICES) {
-    services = JSON.parse(process.env.VCAP_SERVICES);
-    mongoUrl = services["mongolab"][0].credentials.uri;
-    console.log(process.env.VCAP_SERVICES);
-}
-
-console.log(mongoUrl);
-
-// connect to the amazeriffic data store in mongo
-mongoose.connect(mongoUrl);
-
-// This is our mongoose model for todos
-var ToDoSchema = mongoose.Schema({
-    description: String,
-    tags: [ String ]
-});
-
-var ToDo = mongoose.model("ToDo", ToDoSchema);
+app.use(bodyParser.urlencoded({extended:true}));
 
 http.createServer(app).listen(process.env.PORT || 3000);
 
-app.get("/todos.json", function (req, res) {
-    ToDo.find({}, function (err, toDos) {
-	res.json(toDos);
-    });
-});
+// app routes
+app.get("/todos.json", ToDosController.index);
+app.get("/todos/:id", ToDosController.show);
+app.post("/todos", ToDosController.create);
 
-app.post("/todos", function (req, res) {
-    console.log(req.body);
-    var newToDo = new ToDo({"description":req.body.description, "tags":req.body.tags});
-    newToDo.save(function (err, result) {
-	if (err !== null) {
-	    // the element did not get saved!
-	    console.log(err);
-	    res.send("ERROR");
-	} else {
-	    // our client expects *all* of the todo items to be returned, so we'll do
-	    // an additional request to maintain compatibility
-	    ToDo.find({}, function (err, result) {
-		if (err !== null) {
-		    // the element did not get saved!
-		    res.send("ERROR");
-		}
-		res.json(result);
-	    });
-	}
-    });
-});
+// user routes
+app.get("/users.json", usersController.index);
+app.post("/users", usersController.create);
+app.get("/users/:username", usersController.show);
+app.put("/users/:username", usersController.update);
+app.delete("/users/:username", usersController.destroy);
+
+// user todos
+app.get("/users/:username/todos.json", ToDosController.index);
+app.post("/users/:username/todos", ToDosController.create);
+app.delete("/users/:username/todos/:id", ToDosController.destroy);
