@@ -1,0 +1,2106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongodb' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink /usr/local/bin/node
+5 warn package.json amazeriffic@0.0.1 No repository field.
+6 warn package.json amazeriffic@0.0.1 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'mongodb', null ]
+9 verbose cache add name=undefined spec="mongodb" args=["mongodb",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'mongodb',
+10 verbose parsed url   path: 'mongodb',
+10 verbose parsed url   href: 'mongodb' }
+11 silly lockFile 7f1c982e-mongodb mongodb
+12 verbose lock mongodb /home/vagrant/.npm/7f1c982e-mongodb.lock
+13 silly lockFile 7f1c982e-mongodb mongodb
+14 silly lockFile 7f1c982e-mongodb mongodb
+15 verbose addNamed [ 'mongodb', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 886df635-mongodb mongodb@
+18 verbose lock mongodb@ /home/vagrant/.npm/886df635-mongodb.lock
+19 silly addNameRange { name: 'mongodb', range: '*', hasData: false }
+20 verbose url raw mongodb
+21 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb' ]
+22 verbose url resolved https://registry.npmjs.org/mongodb
+23 info trying registry request attempt 1 at 18:41:12
+24 verbose etag "2UW3L00WKTH2LOM6ECWP9OK0J"
+25 http GET https://registry.npmjs.org/mongodb
+26 http 304 https://registry.npmjs.org/mongodb
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:14 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"2UW3L00WKTH2LOM6ECWP9OK0J"',
+27 silly registry.get     age: '146',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-iad2133-IAD',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '2',
+27 silly registry.get     'x-timer': 'S1461264074.595628,VS0,VE0',
+27 silly registry.get     vary: 'Accept-Encoding' } ]
+28 verbose etag mongodb from cache
+29 silly addNameRange number 2 { name: 'mongodb', range: '*', hasData: true }
+30 silly addNameRange versions [ 'mongodb',
+30 silly addNameRange   [ '0.9.4',
+30 silly addNameRange     '0.9.4-4',
+30 silly addNameRange     '0.9.3',
+30 silly addNameRange     '0.9.1',
+30 silly addNameRange     '0.9.2',
+30 silly addNameRange     '0.9.6-7',
+30 silly addNameRange     '0.9.6-8',
+30 silly addNameRange     '0.9.6-9',
+30 silly addNameRange     '0.9.6-10',
+30 silly addNameRange     '0.9.6-11',
+30 silly addNameRange     '0.9.6-12',
+30 silly addNameRange     '0.9.6-13',
+30 silly addNameRange     '0.9.6-14',
+30 silly addNameRange     '0.9.6-15',
+30 silly addNameRange     '0.9.6-16',
+30 silly addNameRange     '0.9.6-17',
+30 silly addNameRange     '0.9.6-18',
+30 silly addNameRange     '0.9.6-19',
+30 silly addNameRange     '0.9.6-20',
+30 silly addNameRange     '0.9.6-21',
+30 silly addNameRange     '0.9.6-22',
+30 silly addNameRange     '0.9.6-23',
+30 silly addNameRange     '0.9.7',
+30 silly addNameRange     '0.9.7-0',
+30 silly addNameRange     '0.9.7-1',
+30 silly addNameRange     '0.9.7-1.1',
+30 silly addNameRange     '0.9.7-1.2',
+30 silly addNameRange     '0.9.7-1.3',
+30 silly addNameRange     '0.9.7-1.4',
+30 silly addNameRange     '0.9.7-2',
+30 silly addNameRange     '0.9.7-2-1',
+30 silly addNameRange     '0.9.7-2-2',
+30 silly addNameRange     '0.9.7-2-3',
+30 silly addNameRange     '0.9.7-2-4',
+30 silly addNameRange     '0.9.7-2-5',
+30 silly addNameRange     '0.9.7-3',
+30 silly addNameRange     '0.9.7-3-1',
+30 silly addNameRange     '0.9.7-3-2',
+30 silly addNameRange     '0.9.7-3-3',
+30 silly addNameRange     '0.9.7-3-4',
+30 silly addNameRange     '0.9.7-3-5',
+30 silly addNameRange     '0.9.8',
+30 silly addNameRange     '0.9.8-1',
+30 silly addNameRange     '0.9.8-2',
+30 silly addNameRange     '0.9.8-3',
+30 silly addNameRange     '0.9.8-4',
+30 silly addNameRange     '0.9.8-5',
+30 silly addNameRange     '0.9.8-6',
+30 silly addNameRange     '0.9.8-7',
+30 silly addNameRange     '0.9.9',
+30 silly addNameRange     '0.9.9-1',
+30 silly addNameRange     '0.9.9-2',
+30 silly addNameRange     '0.9.9-3',
+30 silly addNameRange     '0.9.9-4',
+30 silly addNameRange     '0.9.9-5',
+30 silly addNameRange     '0.9.9-6',
+30 silly addNameRange     '0.9.9-7',
+30 silly addNameRange     '0.9.9-8',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.0.1',
+30 silly addNameRange     '1.0.2',
+30 silly addNameRange     '1.1.0-beta',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.1.1',
+30 silly addNameRange     '1.1.2',
+30 silly addNameRange     '1.1.3',
+30 silly addNameRange     '1.1.4',
+30 silly addNameRange     '1.1.5',
+30 silly addNameRange     '1.1.6',
+30 silly addNameRange     '1.1.7',
+30 silly addNameRange     '1.1.8',
+30 silly addNameRange     '1.1.9',
+30 silly addNameRange     '1.1.10',
+30 silly addNameRange     '1.1.11',
+30 silly addNameRange     '1.2.0',
+30 silly addNameRange     '1.2.1',
+30 silly addNameRange     '1.2.2',
+30 silly addNameRange     '1.2.3',
+30 silly addNameRange     '1.2.4',
+30 silly addNameRange     '1.2.5',
+30 silly addNameRange     '1.2.6',
+30 silly addNameRange     '1.2.7',
+30 silly addNameRange     '1.2.8',
+30 silly addNameRange     '1.2.9',
+30 silly addNameRange     '1.2.10',
+30 silly addNameRange     '1.2.11',
+30 silly addNameRange     '1.2.12',
+30 silly addNameRange     '1.2.13',
+30 silly addNameRange     '1.2.14',
+30 silly addNameRange     '1.3.0',
+30 silly addNameRange     '1.3.1',
+30 silly addNameRange     '1.3.2',
+30 silly addNameRange     '1.3.3',
+30 silly addNameRange     '1.3.4',
+30 silly addNameRange     '1.3.5',
+30 silly addNameRange     '1.3.6',
+30 silly addNameRange     '1.3.7',
+30 silly addNameRange     '1.3.8',
+30 silly addNameRange     '1.3.9',
+30 silly addNameRange     '1.3.10',
+30 silly addNameRange     '1.3.11',
+30 silly addNameRange     '1.3.12',
+30 silly addNameRange     '1.3.14',
+30 silly addNameRange     '1.3.15',
+30 silly addNameRange     '1.3.17',
+30 silly addNameRange     '1.3.18',
+30 silly addNameRange     '1.3.19',
+30 silly addNameRange     '1.4.0-rc2',
+30 silly addNameRange     '1.3.20',
+30 silly addNameRange     '1.4.0-rc3',
+30 silly addNameRange     '1.3.21',
+30 silly addNameRange     '1.3.22',
+30 silly addNameRange     '1.3.23',
+30 silly addNameRange     '1.4.0-rc4',
+30 silly addNameRange     '1.4.0-rc5',
+30 silly addNameRange     '1.4.0-rc6',
+30 silly addNameRange     '1.4.0-rc7',
+30 silly addNameRange     '1.4.0-rc8',
+30 silly addNameRange     '1.4.0-rc9',
+30 silly addNameRange     '1.4.0-rc10',
+30 silly addNameRange     '1.4.0',
+30 silly addNameRange     '1.4.1',
+30 silly addNameRange     '1.4.2',
+30 silly addNameRange     '1.4.3',
+30 silly addNameRange     '1.4.4',
+30 silly addNameRange     '1.4.5',
+30 silly addNameRange     '1.4.6',
+30 silly addNameRange     '1.4.7',
+30 silly addNameRange     '1.4.8',
+30 silly addNameRange     '1.4.9',
+30 silly addNameRange     '1.4.10',
+30 silly addNameRange     '2.0.0-alpha1',
+30 silly addNameRange     '1.4.11',
+30 silly addNameRange     '1.4.12',
+30 silly addNameRange     '1.4.14',
+30 silly addNameRange     '1.4.15',
+30 silly addNameRange     '1.4.16',
+30 silly addNameRange     '1.4.17',
+30 silly addNameRange     '2.0.0-alpha2',
+30 silly addNameRange     '1.4.18',
+30 silly addNameRange     '2.0.0',
+30 silly addNameRange     '2.0.1',
+30 silly addNameRange     '2.0.2',
+30 silly addNameRange     '1.4.19',
+30 silly addNameRange     '2.0.3',
+30 silly addNameRange     '2.0.4',
+30 silly addNameRange     '2.0.5',
+30 silly addNameRange     '2.0.6',
+30 silly addNameRange     '1.4.20',
+30 silly addNameRange     '1.4.22',
+30 silly addNameRange     '2.0.7',
+30 silly addNameRange     '2.0.8',
+30 silly addNameRange     '2.0.9',
+30 silly addNameRange     '1.4.23',
+30 silly addNameRange     '2.0.10',
+30 silly addNameRange     '1.4.24',
+30 silly addNameRange     '2.0.11',
+30 silly addNameRange     '1.4.25',
+30 silly addNameRange     '2.0.12',
+30 silly addNameRange     '1.4.26',
+30 silly addNameRange     '1.4.27',
+30 silly addNameRange     '1.4.28',
+30 silly addNameRange     '2.0.13',
+30 silly addNameRange     '2.0.14',
+30 silly addNameRange     '1.4.29',
+30 silly addNameRange     '2.0.15',
+30 silly addNameRange     '1.4.30',
+30 silly addNameRange     '2.0.16',
+30 silly addNameRange     '1.4.31',
+30 silly addNameRange     '2.0.17',
+30 silly addNameRange     '1.4.32',
+30 silly addNameRange     '2.0.18',
+30 silly addNameRange     '2.0.19',
+30 silly addNameRange     '1.4.33',
+30 silly addNameRange     '2.0.20',
+30 silly addNameRange     '2.0.21',
+30 silly addNameRange     '1.4.34',
+30 silly addNameRange     '2.0.22',
+30 silly addNameRange     '2.0.23',
+30 silly addNameRange     '1.4.35',
+30 silly addNameRange     '2.0.24',
+30 silly addNameRange     '2.0.25',
+30 silly addNameRange     '2.0.26',
+30 silly addNameRange     '2.0.27',
+30 silly addNameRange     '2.0.28',
+30 silly addNameRange     '2.0.29',
+30 silly addNameRange     '1.4.36',
+30 silly addNameRange     '2.0.30',
+30 silly addNameRange     '1.4.37',
+30 silly addNameRange     '2.0.31',
+30 silly addNameRange     '1.4.38',
+30 silly addNameRange     '2.0.32',
+30 silly addNameRange     '2.0.33',
+30 silly addNameRange     '2.1.0-alpha',
+30 silly addNameRange     '2.0.34',
+30 silly addNameRange     '2.0.35',
+30 silly addNameRange     '2.0.36',
+30 silly addNameRange     '2.0.37',
+30 silly addNameRange     '2.0.38',
+30 silly addNameRange     '2.0.39',
+30 silly addNameRange     '1.4.39',
+30 silly addNameRange     '2.0.40',
+30 silly addNameRange     '2.0.41',
+30 silly addNameRange     '2.0.42',
+30 silly addNameRange     '2.0.43',
+30 silly addNameRange     '2.0.44',
+30 silly addNameRange     '2.0.45',
+30 silly addNameRange     '2.0.46',
+30 silly addNameRange     '2.0.47',
+30 silly addNameRange     '2.0.48',
+30 silly addNameRange     '2.1.0-rc1',
+30 silly addNameRange     '2.0.49',
+30 silly addNameRange     '2.0.50',
+30 silly addNameRange     '2.1.0',
+30 silly addNameRange     '2.0.51',
+30 silly addNameRange     '2.1.1',
+30 silly addNameRange     '2.0.52',
+30 silly addNameRange     '2.0.53',
+30 silly addNameRange     '2.1.2',
+30 silly addNameRange     '2.1.3',
+30 silly addNameRange     '2.0.54',
+30 silly addNameRange     '2.0.55',
+30 silly addNameRange     '1.4.40',
+30 silly addNameRange     '2.1.4',
+30 silly addNameRange     '2.1.5',
+30 silly addNameRange     '2.1.6',
+30 silly addNameRange     '2.1.7',
+30 silly addNameRange     '2.1.8',
+30 silly addNameRange     '2.1.9',
+30 silly addNameRange     '2.1.10',
+30 silly addNameRange     '2.1.11',
+30 silly addNameRange     '2.1.12',
+30 silly addNameRange     '2.1.13',
+30 silly addNameRange     '2.1.14',
+30 silly addNameRange     '2.1.15',
+30 silly addNameRange     '2.1.16' ] ]
+31 verbose addNamed [ 'mongodb', '2.1.16' ]
+32 verbose addNamed [ '2.1.16', '2.1.16' ]
+33 silly lockFile 668a61be-mongodb-2-1-16 mongodb@2.1.16
+34 verbose lock mongodb@2.1.16 /home/vagrant/.npm/668a61be-mongodb-2-1-16.lock
+35 silly lockFile 668a61be-mongodb-2-1-16 mongodb@2.1.16
+36 silly lockFile 668a61be-mongodb-2-1-16 mongodb@2.1.16
+37 silly lockFile 886df635-mongodb mongodb@
+38 silly lockFile 886df635-mongodb mongodb@
+39 silly resolved [ { name: 'mongodb',
+39 silly resolved     version: '2.1.16',
+39 silly resolved     description: 'The official MongoDB driver for Node.js',
+39 silly resolved     main: 'index.js',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git@github.com:mongodb/node-mongodb-native.git' },
+39 silly resolved     keywords: [ 'mongodb', 'driver', 'legacy' ],
+39 silly resolved     dependencies:
+39 silly resolved      { 'es6-promise': '3.0.2',
+39 silly resolved        'mongodb-core': '1.3.16',
+39 silly resolved        'readable-stream': '1.0.31' },
+39 silly resolved     devDependencies:
+39 silly resolved      { JSONStream: '^1.0.7',
+39 silly resolved        betterbenchmarks: '^0.1.0',
+39 silly resolved        bluebird: '2.9.27',
+39 silly resolved        bson: '^0.4.20',
+39 silly resolved        'cli-table': '^0.3.1',
+39 silly resolved        co: '4.5.4',
+39 silly resolved        colors: '^1.1.2',
+39 silly resolved        coveralls: '^2.11.6',
+39 silly resolved        'event-stream': '^3.3.2',
+39 silly resolved        gleak: '0.5.0',
+39 silly resolved        integra: '0.1.8',
+39 silly resolved        jsdoc: '3.3.0-beta3',
+39 silly resolved        'ldjson-stream': '^1.2.1',
+39 silly resolved        'mongodb-extended-json': '1.3.0',
+39 silly resolved        'mongodb-topology-manager': '1.0.x',
+39 silly resolved        'mongodb-version-manager': '^0.8.10',
+39 silly resolved        nyc: '^5.5.0',
+39 silly resolved        optimist: '0.6.1',
+39 silly resolved        rimraf: '2.2.6',
+39 silly resolved        semver: '4.1.0',
+39 silly resolved        'worker-farm': '^1.3.1' },
+39 silly resolved     author: { name: 'Christian Kvalheim' },
+39 silly resolved     license: 'Apache-2.0',
+39 silly resolved     engines: { node: '>=0.10.3' },
+39 silly resolved     bugs: { url: 'https://github.com/mongodb/node-mongodb-native/issues' },
+39 silly resolved     scripts:
+39 silly resolved      { test: 'node test/runner.js -t functional',
+39 silly resolved        coverage: 'nyc node test/runner.js -t functional && node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls' },
+39 silly resolved     nyc: { include: [Object] },
+39 silly resolved     homepage: 'https://github.com/mongodb/node-mongodb-native',
+39 silly resolved     gitHead: '032faf8e4ef0704dbc2e33a2acf8e3d461ef19bb',
+39 silly resolved     _id: 'mongodb@2.1.16',
+39 silly resolved     _shasum: '8501a7465574ef4b605c46c98cd6bd57fc4968fa',
+39 silly resolved     _from: 'mongodb@',
+39 silly resolved     _npmVersion: '2.15.0',
+39 silly resolved     _nodeVersion: '4.4.2',
+39 silly resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: '8501a7465574ef4b605c46c98cd6bd57fc4968fa',
+39 silly resolved        tarball: 'https://registry.npmjs.org/mongodb/-/mongodb-2.1.16.tgz' },
+39 silly resolved     _npmOperationalInternal:
+39 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+39 silly resolved        tmp: 'tmp/mongodb-2.1.16.tgz_1460061610565_0.7594260207843035' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/mongodb/-/mongodb-2.1.16.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install mongodb@2.1.16 into /home/vagrant/app/amazeriffic
+41 info installOne mongodb@2.1.16
+42 info /home/vagrant/app/amazeriffic/node_modules/mongodb unbuild
+43 verbose tar unpack /home/vagrant/.npm/mongodb/2.1.16/package.tgz
+44 silly lockFile 45103bb5-amazeriffic-node-modules-mongodb tar:///home/vagrant/app/amazeriffic/node_modules/mongodb
+45 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb /home/vagrant/.npm/45103bb5-amazeriffic-node-modules-mongodb.lock
+46 silly lockFile b25c1417-t-npm-mongodb-2-1-16-package-tgz tar:///home/vagrant/.npm/mongodb/2.1.16/package.tgz
+47 verbose lock tar:///home/vagrant/.npm/mongodb/2.1.16/package.tgz /home/vagrant/.npm/b25c1417-t-npm-mongodb-2-1-16-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm extractEntry test.js
+53 silly gunzTarPerm extractEntry index.js
+54 silly gunzTarPerm extractEntry HISTORY.md
+55 silly gunzTarPerm extractEntry conf.json
+56 silly gunzTarPerm extractEntry .coveralls.yml
+57 silly gunzTarPerm extractEntry lib/admin.js
+58 silly gunzTarPerm extractEntry lib/command_cursor.js
+59 silly gunzTarPerm extractEntry lib/cursor.js
+60 silly gunzTarPerm extractEntry lib/db.js
+61 silly gunzTarPerm extractEntry lib/collection.js
+62 silly gunzTarPerm extractEntry lib/aggregation_cursor.js
+63 silly gunzTarPerm extractEntry lib/metadata.js
+64 silly gunzTarPerm extractEntry lib/mongo_client.js
+65 silly gunzTarPerm extractEntry lib/mongos.js
+66 silly gunzTarPerm extractEntry lib/read_preference.js
+67 silly gunzTarPerm extractEntry lib/url_parser.js
+68 silly gunzTarPerm extractEntry lib/replset.js
+69 silly gunzTarPerm extractEntry lib/apm.js
+70 silly gunzTarPerm extractEntry lib/server.js
+71 silly gunzTarPerm extractEntry lib/topology_base.js
+72 silly gunzTarPerm extractEntry lib/utils.js
+73 silly gunzTarPerm extractEntry lib/gridfs/chunk.js
+74 silly gunzTarPerm extractEntry lib/gridfs/grid_store.js
+75 silly gunzTarPerm extractEntry lib/bulk/common.js
+76 silly gunzTarPerm extractEntry lib/bulk/ordered.js
+77 silly gunzTarPerm extractEntry lib/bulk/unordered.js
+78 silly gunzTarPerm extractEntry lib/gridfs-stream/download.js
+79 silly gunzTarPerm extractEntry lib/gridfs-stream/index.js
+80 silly gunzTarPerm extractEntry lib/gridfs-stream/upload.js
+81 silly gunzTarPerm extractEntry Makefile
+82 silly lockFile 45103bb5-amazeriffic-node-modules-mongodb tar:///home/vagrant/app/amazeriffic/node_modules/mongodb
+83 silly lockFile 45103bb5-amazeriffic-node-modules-mongodb tar:///home/vagrant/app/amazeriffic/node_modules/mongodb
+84 silly lockFile b25c1417-t-npm-mongodb-2-1-16-package-tgz tar:///home/vagrant/.npm/mongodb/2.1.16/package.tgz
+85 silly lockFile b25c1417-t-npm-mongodb-2-1-16-package-tgz tar:///home/vagrant/.npm/mongodb/2.1.16/package.tgz
+86 info preinstall mongodb@2.1.16
+87 verbose readDependencies using package.json deps
+88 verbose readDependencies using package.json deps
+89 verbose cache add [ 'es6-promise@3.0.2', null ]
+90 verbose cache add name=undefined spec="es6-promise@3.0.2" args=["es6-promise@3.0.2",null]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: 'es6-promise@3.0.2',
+91 verbose parsed url   path: 'es6-promise@3.0.2',
+91 verbose parsed url   href: 'es6-promise@3.0.2' }
+92 verbose cache add [ 'mongodb-core@1.3.16', null ]
+93 verbose cache add name=undefined spec="mongodb-core@1.3.16" args=["mongodb-core@1.3.16",null]
+94 verbose parsed url { protocol: null,
+94 verbose parsed url   slashes: null,
+94 verbose parsed url   auth: null,
+94 verbose parsed url   host: null,
+94 verbose parsed url   port: null,
+94 verbose parsed url   hostname: null,
+94 verbose parsed url   hash: null,
+94 verbose parsed url   search: null,
+94 verbose parsed url   query: null,
+94 verbose parsed url   pathname: 'mongodb-core@1.3.16',
+94 verbose parsed url   path: 'mongodb-core@1.3.16',
+94 verbose parsed url   href: 'mongodb-core@1.3.16' }
+95 verbose cache add name="es6-promise" spec="3.0.2" args=["es6-promise","3.0.2"]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: '3.0.2',
+96 verbose parsed url   path: '3.0.2',
+96 verbose parsed url   href: '3.0.2' }
+97 verbose addNamed [ 'es6-promise', '3.0.2' ]
+98 verbose addNamed [ '3.0.2', '3.0.2' ]
+99 silly lockFile 23e86e7f-es6-promise-3-0-2 es6-promise@3.0.2
+100 verbose lock es6-promise@3.0.2 /home/vagrant/.npm/23e86e7f-es6-promise-3-0-2.lock
+101 verbose cache add [ 'readable-stream@1.0.31', null ]
+102 verbose cache add name=undefined spec="readable-stream@1.0.31" args=["readable-stream@1.0.31",null]
+103 verbose parsed url { protocol: null,
+103 verbose parsed url   slashes: null,
+103 verbose parsed url   auth: null,
+103 verbose parsed url   host: null,
+103 verbose parsed url   port: null,
+103 verbose parsed url   hostname: null,
+103 verbose parsed url   hash: null,
+103 verbose parsed url   search: null,
+103 verbose parsed url   query: null,
+103 verbose parsed url   pathname: 'readable-stream@1.0.31',
+103 verbose parsed url   path: 'readable-stream@1.0.31',
+103 verbose parsed url   href: 'readable-stream@1.0.31' }
+104 verbose url raw es6-promise
+105 verbose url resolving [ 'https://registry.npmjs.org/', './es6-promise' ]
+106 verbose url resolved https://registry.npmjs.org/es6-promise
+107 info trying registry request attempt 1 at 18:41:15
+108 verbose etag "DX3SU14YSM6S9DB48VUOGCZ11"
+109 http GET https://registry.npmjs.org/es6-promise
+110 verbose cache add name="mongodb-core" spec="1.3.16" args=["mongodb-core","1.3.16"]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: '1.3.16',
+111 verbose parsed url   path: '1.3.16',
+111 verbose parsed url   href: '1.3.16' }
+112 verbose addNamed [ 'mongodb-core', '1.3.16' ]
+113 verbose addNamed [ '1.3.16', '1.3.16' ]
+114 silly lockFile 88eb057e-mongodb-core-1-3-16 mongodb-core@1.3.16
+115 verbose lock mongodb-core@1.3.16 /home/vagrant/.npm/88eb057e-mongodb-core-1-3-16.lock
+116 verbose cache add name="readable-stream" spec="1.0.31" args=["readable-stream","1.0.31"]
+117 verbose parsed url { protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: '1.0.31',
+117 verbose parsed url   path: '1.0.31',
+117 verbose parsed url   href: '1.0.31' }
+118 verbose addNamed [ 'readable-stream', '1.0.31' ]
+119 verbose addNamed [ '1.0.31', '1.0.31' ]
+120 silly lockFile 5c814a69-readable-stream-1-0-31 readable-stream@1.0.31
+121 verbose lock readable-stream@1.0.31 /home/vagrant/.npm/5c814a69-readable-stream-1-0-31.lock
+122 verbose url raw mongodb-core
+123 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb-core' ]
+124 verbose url resolved https://registry.npmjs.org/mongodb-core
+125 info trying registry request attempt 1 at 18:41:15
+126 verbose etag "2UE2BJ46BLQR1LIUF6K8L9SY4"
+127 http GET https://registry.npmjs.org/mongodb-core
+128 verbose url raw readable-stream
+129 verbose url resolving [ 'https://registry.npmjs.org/', './readable-stream' ]
+130 verbose url resolved https://registry.npmjs.org/readable-stream
+131 info trying registry request attempt 1 at 18:41:15
+132 verbose etag "5BRLUWE930IXBNK5TODDA6JF"
+133 http GET https://registry.npmjs.org/readable-stream
+134 http 304 https://registry.npmjs.org/es6-promise
+135 silly registry.get cb [ 304,
+135 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:17 GMT',
+135 silly registry.get     via: '1.1 varnish',
+135 silly registry.get     'cache-control': 'max-age=300',
+135 silly registry.get     etag: '"DX3SU14YSM6S9DB48VUOGCZ11"',
+135 silly registry.get     age: '53',
+135 silly registry.get     connection: 'keep-alive',
+135 silly registry.get     'x-served-by': 'cache-iad2132-IAD',
+135 silly registry.get     'x-cache': 'HIT',
+135 silly registry.get     'x-cache-hits': '4',
+135 silly registry.get     'x-timer': 'S1461264077.500488,VS0,VE0',
+135 silly registry.get     vary: 'Accept-Encoding' } ]
+136 verbose etag es6-promise from cache
+137 silly lockFile 23e86e7f-es6-promise-3-0-2 es6-promise@3.0.2
+138 silly lockFile 23e86e7f-es6-promise-3-0-2 es6-promise@3.0.2
+139 http 304 https://registry.npmjs.org/mongodb-core
+140 silly registry.get cb [ 304,
+140 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:17 GMT',
+140 silly registry.get     via: '1.1 varnish',
+140 silly registry.get     'cache-control': 'max-age=300',
+140 silly registry.get     etag: '"2UE2BJ46BLQR1LIUF6K8L9SY4"',
+140 silly registry.get     age: '95',
+140 silly registry.get     connection: 'keep-alive',
+140 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+140 silly registry.get     'x-cache': 'HIT',
+140 silly registry.get     'x-cache-hits': '1',
+140 silly registry.get     'x-timer': 'S1461264077.521483,VS0,VE0',
+140 silly registry.get     vary: 'Accept-Encoding' } ]
+141 verbose etag mongodb-core from cache
+142 silly lockFile 88eb057e-mongodb-core-1-3-16 mongodb-core@1.3.16
+143 silly lockFile 88eb057e-mongodb-core-1-3-16 mongodb-core@1.3.16
+144 http 304 https://registry.npmjs.org/readable-stream
+145 silly registry.get cb [ 304,
+145 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:17 GMT',
+145 silly registry.get     via: '1.1 varnish',
+145 silly registry.get     'cache-control': 'max-age=300',
+145 silly registry.get     etag: '"5BRLUWE930IXBNK5TODDA6JF"',
+145 silly registry.get     age: '50',
+145 silly registry.get     connection: 'keep-alive',
+145 silly registry.get     'x-served-by': 'cache-iad2148-IAD',
+145 silly registry.get     'x-cache': 'HIT',
+145 silly registry.get     'x-cache-hits': '10',
+145 silly registry.get     'x-timer': 'S1461264077.537093,VS0,VE0',
+145 silly registry.get     vary: 'Accept-Encoding' } ]
+146 verbose etag readable-stream from cache
+147 silly lockFile 5c814a69-readable-stream-1-0-31 readable-stream@1.0.31
+148 silly lockFile 5c814a69-readable-stream-1-0-31 readable-stream@1.0.31
+149 silly resolved [ { name: 'es6-promise',
+149 silly resolved     namespace: 'es6-promise',
+149 silly resolved     version: '3.0.2',
+149 silly resolved     description: 'A lightweight library that provides tools for organizing asynchronous code',
+149 silly resolved     main: 'dist/es6-promise.js',
+149 silly resolved     directories: { lib: 'lib' },
+149 silly resolved     files: [ 'dist', 'lib', '!dist/test' ],
+149 silly resolved     devDependencies:
+149 silly resolved      { bower: '^1.3.9',
+149 silly resolved        brfs: '0.0.8',
+149 silly resolved        'broccoli-es3-safe-recast': '0.0.8',
+149 silly resolved        'broccoli-es6-module-transpiler': '^0.5.0',
+149 silly resolved        'broccoli-jshint': '^0.5.1',
+149 silly resolved        'broccoli-merge-trees': '^0.1.4',
+149 silly resolved        'broccoli-replace': '^0.2.0',
+149 silly resolved        'broccoli-stew': '0.0.6',
+149 silly resolved        'broccoli-uglify-js': '^0.1.3',
+149 silly resolved        'broccoli-watchify': '^0.2.0',
+149 silly resolved        'ember-cli': '0.2.3',
+149 silly resolved        'ember-publisher': '0.0.7',
+149 silly resolved        'git-repo-version': '0.0.2',
+149 silly resolved        json3: '^3.3.2',
+149 silly resolved        minimatch: '^2.0.1',
+149 silly resolved        mocha: '^1.20.1',
+149 silly resolved        'promises-aplus-tests-phantom': '^2.1.0-revise',
+149 silly resolved        'release-it': '0.0.10' },
+149 silly resolved     scripts:
+149 silly resolved      { build: 'ember build',
+149 silly resolved        start: 'ember s',
+149 silly resolved        test: 'ember test',
+149 silly resolved        'test:server': 'ember test --server',
+149 silly resolved        'test:node': 'ember build && mocha ./dist/test/browserify',
+149 silly resolved        lint: 'jshint lib',
+149 silly resolved        prepublish: 'ember build --environment production',
+149 silly resolved        'dry-run-release': 'ember build --environment production && release-it --dry-run --non-interactive' },
+149 silly resolved     repository:
+149 silly resolved      { type: 'git',
+149 silly resolved        url: 'git://github.com/jakearchibald/ES6-Promises.git' },
+149 silly resolved     bugs: { url: 'https://github.com/jakearchibald/ES6-Promises/issues' },
+149 silly resolved     browser: { vertx: false },
+149 silly resolved     keywords: [ 'promises', 'futures' ],
+149 silly resolved     author:
+149 silly resolved      { name: 'Yehuda Katz, Tom Dale, Stefan Penner and contributors',
+149 silly resolved        url: 'Conversion to ES6 API by Jake Archibald' },
+149 silly resolved     license: 'MIT',
+149 silly resolved     spm: { main: 'dist/es6-promise.js' },
+149 silly resolved     gitHead: '6c49ef79609737bac2b496d508806a3d5e37303e',
+149 silly resolved     homepage: 'https://github.com/jakearchibald/ES6-Promises#readme',
+149 silly resolved     _id: 'es6-promise@3.0.2',
+149 silly resolved     _shasum: '010d5858423a5f118979665f46486a95c6ee2bb6',
+149 silly resolved     _from: 'es6-promise@3.0.2',
+149 silly resolved     _npmVersion: '2.13.4',
+149 silly resolved     _nodeVersion: '2.2.1',
+149 silly resolved     _npmUser: { name: 'stefanpenner', email: 'stefan.penner@gmail.com' },
+149 silly resolved     maintainers: [ [Object], [Object] ],
+149 silly resolved     dist:
+149 silly resolved      { shasum: '010d5858423a5f118979665f46486a95c6ee2bb6',
+149 silly resolved        tarball: 'https://registry.npmjs.org/es6-promise/-/es6-promise-3.0.2.tgz' },
+149 silly resolved     _resolved: 'https://registry.npmjs.org/es6-promise/-/es6-promise-3.0.2.tgz',
+149 silly resolved     readme: 'ERROR: No README data found!' },
+149 silly resolved   { name: 'mongodb-core',
+149 silly resolved     version: '1.3.16',
+149 silly resolved     description: 'Core MongoDB driver functionality, no bells and whistles and meant for integration not end applications',
+149 silly resolved     main: 'index.js',
+149 silly resolved     scripts:
+149 silly resolved      { test: 'node test/runner.js -t functional',
+149 silly resolved        coverage: 'nyc node test/runner.js -t functional -l && node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls' },
+149 silly resolved     repository:
+149 silly resolved      { type: 'git',
+149 silly resolved        url: 'git://github.com/christkv/mongodb-core.git' },
+149 silly resolved     keywords: [ 'mongodb', 'core' ],
+149 silly resolved     dependencies: { bson: '~0.4.21', require_optional: '~1.0.0' },
+149 silly resolved     devDependencies:
+149 silly resolved      { co: '4.5.4',
+149 silly resolved        coveralls: '^2.11.6',
+149 silly resolved        'es6-promise': '^3.0.2',
+149 silly resolved        gleak: '0.5.0',
+149 silly resolved        integra: '0.1.8',
+149 silly resolved        jsdoc: '3.3.0-alpha8',
+149 silly resolved        mkdirp: '0.5.0',
+149 silly resolved        'mongodb-topology-manager': '1.0.x',
+149 silly resolved        'mongodb-version-manager': '^1.x',
+149 silly resolved        nyc: '^5.5.0',
+149 silly resolved        optimist: 'latest',
+149 silly resolved        rimraf: '2.2.6',
+149 silly resolved        semver: '4.1.0' },
+149 silly resolved     peerOptionalDependencies: { kerberos: '~0.0' },
+149 silly resolved     author: { name: 'Christian Kvalheim' },
+149 silly resolved     license: 'Apache-2.0',
+149 silly resolved     bugs: { url: 'https://github.com/christkv/mongodb-core/issues' },
+149 silly resolved     homepage: 'https://github.com/christkv/mongodb-core',
+149 silly resolved     gitHead: '146d614c91c10a305a105d0d16387baa586c5fe1',
+149 silly resolved     _id: 'mongodb-core@1.3.16',
+149 silly resolved     _shasum: '6f9905bc7be0c890333a011d0313e5f0e2769a3b',
+149 silly resolved     _from: 'mongodb-core@1.3.16',
+149 silly resolved     _npmVersion: '2.15.0',
+149 silly resolved     _nodeVersion: '4.4.2',
+149 silly resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+149 silly resolved     maintainers: [ [Object] ],
+149 silly resolved     dist:
+149 silly resolved      { shasum: '6f9905bc7be0c890333a011d0313e5f0e2769a3b',
+149 silly resolved        tarball: 'https://registry.npmjs.org/mongodb-core/-/mongodb-core-1.3.16.tgz' },
+149 silly resolved     _npmOperationalInternal:
+149 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+149 silly resolved        tmp: 'tmp/mongodb-core-1.3.16.tgz_1460061507000_0.856263784924522' },
+149 silly resolved     directories: {},
+149 silly resolved     _resolved: 'https://registry.npmjs.org/mongodb-core/-/mongodb-core-1.3.16.tgz',
+149 silly resolved     readme: 'ERROR: No README data found!' },
+149 silly resolved   { name: 'readable-stream',
+149 silly resolved     version: '1.0.31',
+149 silly resolved     description: 'Streams2, a user-land copy of the stream library from Node.js v0.10.x',
+149 silly resolved     main: 'readable.js',
+149 silly resolved     dependencies:
+149 silly resolved      { 'core-util-is': '~1.0.0',
+149 silly resolved        isarray: '0.0.1',
+149 silly resolved        string_decoder: '~0.10.x',
+149 silly resolved        inherits: '~2.0.1' },
+149 silly resolved     devDependencies: { tap: '~0.2.6' },
+149 silly resolved     scripts: { test: 'tap test/simple/*.js' },
+149 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/readable-stream' },
+149 silly resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+149 silly resolved     browser: { util: false },
+149 silly resolved     author:
+149 silly resolved      { name: 'Isaac Z. Schlueter',
+149 silly resolved        email: 'i@izs.me',
+149 silly resolved        url: 'http://blog.izs.me/' },
+149 silly resolved     license: 'MIT',
+149 silly resolved     bugs: { url: 'https://github.com/isaacs/readable-stream/issues' },
+149 silly resolved     homepage: 'https://github.com/isaacs/readable-stream',
+149 silly resolved     _id: 'readable-stream@1.0.31',
+149 silly resolved     _shasum: '8f2502e0bc9e3b0da1b94520aabb4e2603ecafae',
+149 silly resolved     _from: 'readable-stream@1.0.31',
+149 silly resolved     _npmVersion: '1.4.9',
+149 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+149 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+149 silly resolved     dist:
+149 silly resolved      { shasum: '8f2502e0bc9e3b0da1b94520aabb4e2603ecafae',
+149 silly resolved        tarball: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz' },
+149 silly resolved     directories: {},
+149 silly resolved     _resolved: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz',
+149 silly resolved     readme: 'ERROR: No README data found!' } ]
+150 info install es6-promise@3.0.2 into /home/vagrant/app/amazeriffic/node_modules/mongodb
+151 info install mongodb-core@1.3.16 into /home/vagrant/app/amazeriffic/node_modules/mongodb
+152 info install readable-stream@1.0.31 into /home/vagrant/app/amazeriffic/node_modules/mongodb
+153 info installOne es6-promise@3.0.2
+154 info installOne mongodb-core@1.3.16
+155 info installOne readable-stream@1.0.31
+156 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/es6-promise unbuild
+157 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core unbuild
+158 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream unbuild
+159 verbose tar unpack /home/vagrant/.npm/es6-promise/3.0.2/package.tgz
+160 silly lockFile c4c9f073-mongodb-node-modules-es6-promise tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/es6-promise
+161 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/es6-promise /home/vagrant/.npm/c4c9f073-mongodb-node-modules-es6-promise.lock
+162 silly lockFile 21d9fb55-pm-es6-promise-3-0-2-package-tgz tar:///home/vagrant/.npm/es6-promise/3.0.2/package.tgz
+163 verbose lock tar:///home/vagrant/.npm/es6-promise/3.0.2/package.tgz /home/vagrant/.npm/21d9fb55-pm-es6-promise-3-0-2-package-tgz.lock
+164 verbose tar unpack /home/vagrant/.npm/mongodb-core/1.3.16/package.tgz
+165 silly lockFile 744ccbc0-ongodb-node-modules-mongodb-core tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core
+166 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core /home/vagrant/.npm/744ccbc0-ongodb-node-modules-mongodb-core.lock
+167 silly lockFile 8e7c2c47--mongodb-core-1-3-16-package-tgz tar:///home/vagrant/.npm/mongodb-core/1.3.16/package.tgz
+168 verbose lock tar:///home/vagrant/.npm/mongodb-core/1.3.16/package.tgz /home/vagrant/.npm/8e7c2c47--mongodb-core-1-3-16-package-tgz.lock
+169 verbose tar unpack /home/vagrant/.npm/readable-stream/1.0.31/package.tgz
+170 silly lockFile 17374f04-odb-node-modules-readable-stream tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+171 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream /home/vagrant/.npm/17374f04-odb-node-modules-readable-stream.lock
+172 silly lockFile 515aa4a0-adable-stream-1-0-31-package-tgz tar:///home/vagrant/.npm/readable-stream/1.0.31/package.tgz
+173 verbose lock tar:///home/vagrant/.npm/readable-stream/1.0.31/package.tgz /home/vagrant/.npm/515aa4a0-adable-stream-1-0-31-package-tgz.lock
+174 silly gunzTarPerm modes [ '755', '644' ]
+175 silly gunzTarPerm modes [ '755', '644' ]
+176 silly gunzTarPerm modes [ '755', '644' ]
+177 silly gunzTarPerm extractEntry package.json
+178 silly gunzTarPerm extractEntry package.json
+179 silly gunzTarPerm extractEntry package.json
+180 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+181 silly gunzTarPerm extractEntry README.md
+182 silly gunzTarPerm extractEntry LICENSE
+183 silly gunzTarPerm extractEntry README.md
+184 silly gunzTarPerm extractEntry LICENSE
+185 silly gunzTarPerm extractEntry .npmignore
+186 silly gunzTarPerm extractEntry README.md
+187 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+188 silly gunzTarPerm extractEntry index.js
+189 silly gunzTarPerm extractEntry LICENSE
+190 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+191 silly gunzTarPerm extractEntry transform.js
+192 silly gunzTarPerm extractEntry CHANGELOG.md
+193 silly gunzTarPerm extractEntry duplex.js
+194 silly gunzTarPerm extractEntry readable.js
+195 silly gunzTarPerm modified mode [ 'readable.js', 436, 420 ]
+196 silly gunzTarPerm extractEntry dist/es6-promise.js
+197 silly gunzTarPerm extractEntry dist/es6-promise.min.js
+198 silly gunzTarPerm extractEntry HISTORY.md
+199 silly gunzTarPerm extractEntry Makefile
+200 silly gunzTarPerm extractEntry passthrough.js
+201 silly gunzTarPerm extractEntry writable.js
+202 silly gunzTarPerm extractEntry lib/es6-promise.umd.js
+203 silly gunzTarPerm extractEntry lib/es6-promise/-internal.js
+204 silly gunzTarPerm extractEntry TESTING.md
+205 silly gunzTarPerm extractEntry .coveralls.yml
+206 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+207 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 436, 420 ]
+208 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+209 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 436, 420 ]
+210 silly gunzTarPerm extractEntry lib/es6-promise/asap.js
+211 silly gunzTarPerm extractEntry lib/es6-promise/enumerator.js
+212 silly gunzTarPerm extractEntry conf.json
+213 silly gunzTarPerm extractEntry lib/cursor.js
+214 silly gunzTarPerm extractEntry lib/_stream_readable.js
+215 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 436, 420 ]
+216 silly gunzTarPerm extractEntry lib/_stream_transform.js
+217 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 436, 420 ]
+218 silly gunzTarPerm extractEntry lib/_stream_writable.js
+219 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 436, 420 ]
+220 silly gunzTarPerm extractEntry lib/error.js
+221 silly gunzTarPerm extractEntry lib/auth/gssapi.js
+222 silly gunzTarPerm extractEntry lib/es6-promise/polyfill.js
+223 silly gunzTarPerm extractEntry lib/es6-promise/promise.js
+224 silly gunzTarPerm extractEntry lib/auth/mongocr.js
+225 silly gunzTarPerm extractEntry lib/auth/plain.js
+226 silly gunzTarPerm extractEntry lib/auth/scram.js
+227 silly gunzTarPerm extractEntry lib/auth/sspi.js
+228 silly gunzTarPerm extractEntry lib/es6-promise/utils.js
+229 silly gunzTarPerm extractEntry lib/es6-promise/promise/all.js
+230 silly gunzTarPerm extractEntry lib/auth/x509.js
+231 silly gunzTarPerm extractEntry lib/connection/commands.js
+232 silly gunzTarPerm extractEntry lib/es6-promise/promise/race.js
+233 silly gunzTarPerm extractEntry lib/es6-promise/promise/reject.js
+234 silly gunzTarPerm extractEntry lib/connection/connection.js
+235 silly gunzTarPerm extractEntry lib/connection/logger.js
+236 silly gunzTarPerm extractEntry lib/es6-promise/promise/resolve.js
+237 silly gunzTarPerm extractEntry lib/connection/pool.js
+238 silly gunzTarPerm extractEntry lib/connection/utils.js
+239 silly gunzTarPerm extractEntry lib/tools/smoke_plugin.js
+240 silly gunzTarPerm extractEntry lib/topologies/command_result.js
+241 silly gunzTarPerm extractEntry lib/topologies/mongos.js
+242 silly gunzTarPerm extractEntry lib/topologies/read_preference.js
+243 silly gunzTarPerm extractEntry lib/topologies/replset.js
+244 silly gunzTarPerm extractEntry lib/topologies/replset_state.js
+245 silly lockFile 17374f04-odb-node-modules-readable-stream tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+246 silly lockFile 17374f04-odb-node-modules-readable-stream tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+247 silly lockFile 515aa4a0-adable-stream-1-0-31-package-tgz tar:///home/vagrant/.npm/readable-stream/1.0.31/package.tgz
+248 silly lockFile 515aa4a0-adable-stream-1-0-31-package-tgz tar:///home/vagrant/.npm/readable-stream/1.0.31/package.tgz
+249 info preinstall readable-stream@1.0.31
+250 verbose readDependencies using package.json deps
+251 verbose readDependencies using package.json deps
+252 verbose cache add [ 'core-util-is@~1.0.0', null ]
+253 verbose cache add name=undefined spec="core-util-is@~1.0.0" args=["core-util-is@~1.0.0",null]
+254 verbose parsed url { protocol: null,
+254 verbose parsed url   slashes: null,
+254 verbose parsed url   auth: null,
+254 verbose parsed url   host: null,
+254 verbose parsed url   port: null,
+254 verbose parsed url   hostname: null,
+254 verbose parsed url   hash: null,
+254 verbose parsed url   search: null,
+254 verbose parsed url   query: null,
+254 verbose parsed url   pathname: 'core-util-is@~1.0.0',
+254 verbose parsed url   path: 'core-util-is@~1.0.0',
+254 verbose parsed url   href: 'core-util-is@~1.0.0' }
+255 verbose cache add [ 'inherits@~2.0.1', null ]
+256 verbose cache add name=undefined spec="inherits@~2.0.1" args=["inherits@~2.0.1",null]
+257 verbose parsed url { protocol: null,
+257 verbose parsed url   slashes: null,
+257 verbose parsed url   auth: null,
+257 verbose parsed url   host: null,
+257 verbose parsed url   port: null,
+257 verbose parsed url   hostname: null,
+257 verbose parsed url   hash: null,
+257 verbose parsed url   search: null,
+257 verbose parsed url   query: null,
+257 verbose parsed url   pathname: 'inherits@~2.0.1',
+257 verbose parsed url   path: 'inherits@~2.0.1',
+257 verbose parsed url   href: 'inherits@~2.0.1' }
+258 verbose cache add name="core-util-is" spec="~1.0.0" args=["core-util-is","~1.0.0"]
+259 verbose parsed url { protocol: null,
+259 verbose parsed url   slashes: null,
+259 verbose parsed url   auth: null,
+259 verbose parsed url   host: null,
+259 verbose parsed url   port: null,
+259 verbose parsed url   hostname: null,
+259 verbose parsed url   hash: null,
+259 verbose parsed url   search: null,
+259 verbose parsed url   query: null,
+259 verbose parsed url   pathname: '~1.0.0',
+259 verbose parsed url   path: '~1.0.0',
+259 verbose parsed url   href: '~1.0.0' }
+260 verbose addNamed [ 'core-util-is', '~1.0.0' ]
+261 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+262 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+263 verbose lock core-util-is@~1.0.0 /home/vagrant/.npm/577b60c4-core-util-is-1-0-0.lock
+264 verbose cache add [ 'isarray@0.0.1', null ]
+265 verbose cache add name=undefined spec="isarray@0.0.1" args=["isarray@0.0.1",null]
+266 verbose parsed url { protocol: null,
+266 verbose parsed url   slashes: null,
+266 verbose parsed url   auth: null,
+266 verbose parsed url   host: null,
+266 verbose parsed url   port: null,
+266 verbose parsed url   hostname: null,
+266 verbose parsed url   hash: null,
+266 verbose parsed url   search: null,
+266 verbose parsed url   query: null,
+266 verbose parsed url   pathname: 'isarray@0.0.1',
+266 verbose parsed url   path: 'isarray@0.0.1',
+266 verbose parsed url   href: 'isarray@0.0.1' }
+267 verbose cache add name="inherits" spec="~2.0.1" args=["inherits","~2.0.1"]
+268 verbose parsed url { protocol: null,
+268 verbose parsed url   slashes: null,
+268 verbose parsed url   auth: null,
+268 verbose parsed url   host: null,
+268 verbose parsed url   port: null,
+268 verbose parsed url   hostname: null,
+268 verbose parsed url   hash: null,
+268 verbose parsed url   search: null,
+268 verbose parsed url   query: null,
+268 verbose parsed url   pathname: '~2.0.1',
+268 verbose parsed url   path: '~2.0.1',
+268 verbose parsed url   href: '~2.0.1' }
+269 verbose addNamed [ 'inherits', '~2.0.1' ]
+270 verbose addNamed [ null, '>=2.0.1-0 <2.1.0-0' ]
+271 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+272 verbose lock inherits@~2.0.1 /home/vagrant/.npm/098ef39f-inherits-2-0-1.lock
+273 verbose cache add [ 'string_decoder@~0.10.x', null ]
+274 verbose cache add name=undefined spec="string_decoder@~0.10.x" args=["string_decoder@~0.10.x",null]
+275 verbose parsed url { protocol: null,
+275 verbose parsed url   slashes: null,
+275 verbose parsed url   auth: null,
+275 verbose parsed url   host: null,
+275 verbose parsed url   port: null,
+275 verbose parsed url   hostname: null,
+275 verbose parsed url   hash: null,
+275 verbose parsed url   search: null,
+275 verbose parsed url   query: null,
+275 verbose parsed url   pathname: 'string_decoder@~0.10.x',
+275 verbose parsed url   path: 'string_decoder@~0.10.x',
+275 verbose parsed url   href: 'string_decoder@~0.10.x' }
+276 verbose cache add name="isarray" spec="0.0.1" args=["isarray","0.0.1"]
+277 verbose parsed url { protocol: null,
+277 verbose parsed url   slashes: null,
+277 verbose parsed url   auth: null,
+277 verbose parsed url   host: null,
+277 verbose parsed url   port: null,
+277 verbose parsed url   hostname: null,
+277 verbose parsed url   hash: null,
+277 verbose parsed url   search: null,
+277 verbose parsed url   query: null,
+277 verbose parsed url   pathname: '0.0.1',
+277 verbose parsed url   path: '0.0.1',
+277 verbose parsed url   href: '0.0.1' }
+278 verbose addNamed [ 'isarray', '0.0.1' ]
+279 verbose addNamed [ '0.0.1', '0.0.1' ]
+280 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+281 verbose lock isarray@0.0.1 /home/vagrant/.npm/9efe11b1-isarray-0-0-1.lock
+282 silly addNameRange { name: 'core-util-is',
+282 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+282 silly addNameRange   hasData: false }
+283 verbose cache add name="string_decoder" spec="~0.10.x" args=["string_decoder","~0.10.x"]
+284 verbose parsed url { protocol: null,
+284 verbose parsed url   slashes: null,
+284 verbose parsed url   auth: null,
+284 verbose parsed url   host: null,
+284 verbose parsed url   port: null,
+284 verbose parsed url   hostname: null,
+284 verbose parsed url   hash: null,
+284 verbose parsed url   search: null,
+284 verbose parsed url   query: null,
+284 verbose parsed url   pathname: '~0.10.x',
+284 verbose parsed url   path: '~0.10.x',
+284 verbose parsed url   href: '~0.10.x' }
+285 verbose addNamed [ 'string_decoder', '~0.10.x' ]
+286 verbose addNamed [ null, '>=0.10.0-0 <0.11.0-0' ]
+287 silly lockFile 8f75c97d-string-decoder-0-10-x string_decoder@~0.10.x
+288 verbose lock string_decoder@~0.10.x /home/vagrant/.npm/8f75c97d-string-decoder-0-10-x.lock
+289 silly addNameRange { name: 'inherits', range: '>=2.0.1-0 <2.1.0-0', hasData: false }
+290 silly addNameRange { name: 'string_decoder',
+290 silly addNameRange   range: '>=0.10.0-0 <0.11.0-0',
+290 silly addNameRange   hasData: false }
+291 verbose url raw core-util-is
+292 verbose url resolving [ 'https://registry.npmjs.org/', './core-util-is' ]
+293 verbose url resolved https://registry.npmjs.org/core-util-is
+294 info trying registry request attempt 1 at 18:41:23
+295 verbose etag "75RK9UUWAHLYO40UZKLLOJ8YF"
+296 http GET https://registry.npmjs.org/core-util-is
+297 verbose url raw inherits
+298 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+299 verbose url resolved https://registry.npmjs.org/inherits
+300 info trying registry request attempt 1 at 18:41:23
+301 verbose etag "9C23BNETE30UZVYRVML0QUTBX"
+302 http GET https://registry.npmjs.org/inherits
+303 verbose url raw isarray
+304 verbose url resolving [ 'https://registry.npmjs.org/', './isarray' ]
+305 verbose url resolved https://registry.npmjs.org/isarray
+306 info trying registry request attempt 1 at 18:41:23
+307 verbose etag "9BAUPW5RTV3W0838KA6Y08NTG"
+308 http GET https://registry.npmjs.org/isarray
+309 verbose url raw string_decoder
+310 verbose url resolving [ 'https://registry.npmjs.org/', './string_decoder' ]
+311 verbose url resolved https://registry.npmjs.org/string_decoder
+312 info trying registry request attempt 1 at 18:41:23
+313 verbose etag "10960F9AZ6BARJ6U23H8R6EVA"
+314 http GET https://registry.npmjs.org/string_decoder
+315 silly gunzTarPerm extractEntry lib/topologies/server.js
+316 silly gunzTarPerm extractEntry lib/topologies/session.js
+317 silly gunzTarPerm extractEntry lib/topologies/strategies/ping.js
+318 silly gunzTarPerm extractEntry lib/wireprotocol/2_4_support.js
+319 silly gunzTarPerm extractEntry lib/wireprotocol/2_6_support.js
+320 silly gunzTarPerm extractEntry lib/wireprotocol/3_2_support.js
+321 silly gunzTarPerm extractEntry lib/wireprotocol/commands.js
+322 silly gunzTarPerm extractEntry lib/wireprotocol/shared.js
+323 silly gunzTarPerm extractEntry simple_2_document_limit_toArray.dat
+324 http 304 https://registry.npmjs.org/core-util-is
+325 silly registry.get cb [ 304,
+325 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:24 GMT',
+325 silly registry.get     via: '1.1 varnish',
+325 silly registry.get     'cache-control': 'max-age=300',
+325 silly registry.get     etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+325 silly registry.get     age: '170',
+325 silly registry.get     connection: 'keep-alive',
+325 silly registry.get     'x-served-by': 'cache-iad2147-IAD',
+325 silly registry.get     'x-cache': 'HIT',
+325 silly registry.get     'x-cache-hits': '37',
+325 silly registry.get     'x-timer': 'S1461264084.880819,VS0,VE0',
+325 silly registry.get     vary: 'Accept-Encoding' } ]
+326 verbose etag core-util-is from cache
+327 http 304 https://registry.npmjs.org/inherits
+328 silly registry.get cb [ 304,
+328 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:24 GMT',
+328 silly registry.get     via: '1.1 varnish',
+328 silly registry.get     'cache-control': 'max-age=300',
+328 silly registry.get     etag: '"9C23BNETE30UZVYRVML0QUTBX"',
+328 silly registry.get     age: '298',
+328 silly registry.get     connection: 'keep-alive',
+328 silly registry.get     'x-served-by': 'cache-iad2132-IAD',
+328 silly registry.get     'x-cache': 'HIT',
+328 silly registry.get     'x-cache-hits': '52',
+328 silly registry.get     'x-timer': 'S1461264084.885798,VS0,VE0',
+328 silly registry.get     vary: 'Accept-Encoding' } ]
+329 verbose etag inherits from cache
+330 http 304 https://registry.npmjs.org/isarray
+331 silly registry.get cb [ 304,
+331 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:24 GMT',
+331 silly registry.get     via: '1.1 varnish',
+331 silly registry.get     'cache-control': 'max-age=300',
+331 silly registry.get     etag: '"9BAUPW5RTV3W0838KA6Y08NTG"',
+331 silly registry.get     age: '199',
+331 silly registry.get     connection: 'keep-alive',
+331 silly registry.get     'x-served-by': 'cache-iad2131-IAD',
+331 silly registry.get     'x-cache': 'HIT',
+331 silly registry.get     'x-cache-hits': '37',
+331 silly registry.get     'x-timer': 'S1461264084.895030,VS0,VE0',
+331 silly registry.get     vary: 'Accept-Encoding' } ]
+332 verbose etag isarray from cache
+333 silly addNameRange number 2 { name: 'core-util-is',
+333 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+333 silly addNameRange   hasData: true }
+334 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+335 verbose addNamed [ 'core-util-is', '1.0.2' ]
+336 verbose addNamed [ '1.0.2', '1.0.2' ]
+337 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+338 verbose lock core-util-is@1.0.2 /home/vagrant/.npm/250fbf62-core-util-is-1-0-2.lock
+339 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.1-0 <2.1.0-0', hasData: true }
+340 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+341 verbose addNamed [ 'inherits', '2.0.1' ]
+342 verbose addNamed [ '2.0.1', '2.0.1' ]
+343 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+344 verbose lock inherits@2.0.1 /home/vagrant/.npm/2b2e8f1b-inherits-2-0-1.lock
+345 http 200 https://registry.npmjs.org/string_decoder
+346 silly registry.get cb [ 200,
+346 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+346 silly registry.get     etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+346 silly registry.get     'content-type': 'application/json',
+346 silly registry.get     'cache-control': 'max-age=300',
+346 silly registry.get     'content-length': '8822',
+346 silly registry.get     'accept-ranges': 'bytes',
+346 silly registry.get     date: 'Thu, 21 Apr 2016 18:41:24 GMT',
+346 silly registry.get     via: '1.1 varnish',
+346 silly registry.get     age: '190',
+346 silly registry.get     connection: 'keep-alive',
+346 silly registry.get     'x-served-by': 'cache-iad2137-IAD',
+346 silly registry.get     'x-cache': 'HIT',
+346 silly registry.get     'x-cache-hits': '29',
+346 silly registry.get     'x-timer': 'S1461264084.898465,VS0,VE0',
+346 silly registry.get     vary: 'Accept-Encoding' } ]
+347 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+348 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+349 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+350 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+351 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+352 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+353 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+354 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+355 silly addNameRange number 2 { name: 'string_decoder',
+355 silly addNameRange   range: '>=0.10.0-0 <0.11.0-0',
+355 silly addNameRange   hasData: true }
+356 silly addNameRange versions [ 'string_decoder',
+356 silly addNameRange   [ '0.0.0',
+356 silly addNameRange     '0.0.1',
+356 silly addNameRange     '0.10.24',
+356 silly addNameRange     '0.11.10',
+356 silly addNameRange     '0.10.25',
+356 silly addNameRange     '0.11.10-1',
+356 silly addNameRange     '0.10.25-1',
+356 silly addNameRange     '0.10.31' ] ]
+357 verbose addNamed [ 'string_decoder', '0.10.31' ]
+358 verbose addNamed [ '0.10.31', '0.10.31' ]
+359 silly lockFile 0a9a4818-string-decoder-0-10-31 string_decoder@0.10.31
+360 verbose lock string_decoder@0.10.31 /home/vagrant/.npm/0a9a4818-string-decoder-0-10-31.lock
+361 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+362 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+363 silly lockFile 0a9a4818-string-decoder-0-10-31 string_decoder@0.10.31
+364 silly lockFile 0a9a4818-string-decoder-0-10-31 string_decoder@0.10.31
+365 silly lockFile 8f75c97d-string-decoder-0-10-x string_decoder@~0.10.x
+366 silly lockFile 8f75c97d-string-decoder-0-10-x string_decoder@~0.10.x
+367 silly resolved [ { name: 'core-util-is',
+367 silly resolved     version: '1.0.2',
+367 silly resolved     description: 'The `util.is*` functions introduced in Node v0.12.',
+367 silly resolved     main: 'lib/util.js',
+367 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/core-util-is.git' },
+367 silly resolved     keywords:
+367 silly resolved      [ 'util',
+367 silly resolved        'isBuffer',
+367 silly resolved        'isArray',
+367 silly resolved        'isNumber',
+367 silly resolved        'isString',
+367 silly resolved        'isRegExp',
+367 silly resolved        'isThis',
+367 silly resolved        'isThat',
+367 silly resolved        'polyfill' ],
+367 silly resolved     author:
+367 silly resolved      { name: 'Isaac Z. Schlueter',
+367 silly resolved        email: 'i@izs.me',
+367 silly resolved        url: 'http://blog.izs.me/' },
+367 silly resolved     license: 'MIT',
+367 silly resolved     bugs: { url: 'https://github.com/isaacs/core-util-is/issues' },
+367 silly resolved     scripts: { test: 'tap test.js' },
+367 silly resolved     devDependencies: { tap: '^2.3.0' },
+367 silly resolved     gitHead: 'a177da234df5638b363ddc15fa324619a38577c8',
+367 silly resolved     homepage: 'https://github.com/isaacs/core-util-is#readme',
+367 silly resolved     _id: 'core-util-is@1.0.2',
+367 silly resolved     _shasum: 'b5fd54220aa2bc5ab57aab7140c940754503c1a7',
+367 silly resolved     _from: 'core-util-is@~1.0.0',
+367 silly resolved     _npmVersion: '3.3.2',
+367 silly resolved     _nodeVersion: '4.0.0',
+367 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+367 silly resolved     dist:
+367 silly resolved      { shasum: 'b5fd54220aa2bc5ab57aab7140c940754503c1a7',
+367 silly resolved        tarball: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz' },
+367 silly resolved     maintainers: [ [Object] ],
+367 silly resolved     directories: {},
+367 silly resolved     _resolved: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz',
+367 silly resolved     readme: 'ERROR: No README data found!' },
+367 silly resolved   { name: 'isarray',
+367 silly resolved     description: 'Array#isArray for older browsers',
+367 silly resolved     version: '0.0.1',
+367 silly resolved     repository:
+367 silly resolved      { type: 'git',
+367 silly resolved        url: 'git://github.com/juliangruber/isarray.git' },
+367 silly resolved     homepage: 'https://github.com/juliangruber/isarray',
+367 silly resolved     main: 'index.js',
+367 silly resolved     scripts: { test: 'tap test/*.js' },
+367 silly resolved     dependencies: {},
+367 silly resolved     devDependencies: { tap: '*' },
+367 silly resolved     keywords: [ 'browser', 'isarray', 'array' ],
+367 silly resolved     author:
+367 silly resolved      { name: 'Julian Gruber',
+367 silly resolved        email: 'mail@juliangruber.com',
+367 silly resolved        url: 'http://juliangruber.com' },
+367 silly resolved     license: 'MIT',
+367 silly resolved     _id: 'isarray@0.0.1',
+367 silly resolved     dist:
+367 silly resolved      { shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+367 silly resolved        tarball: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz' },
+367 silly resolved     _from: 'isarray@0.0.1',
+367 silly resolved     _npmVersion: '1.2.18',
+367 silly resolved     _npmUser: { name: 'juliangruber', email: 'julian@juliangruber.com' },
+367 silly resolved     maintainers: [ [Object] ],
+367 silly resolved     directories: {},
+367 silly resolved     _shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+367 silly resolved     _resolved: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz',
+367 silly resolved     bugs: { url: 'https://github.com/juliangruber/isarray/issues' },
+367 silly resolved     readme: 'ERROR: No README data found!' },
+367 silly resolved   { name: 'inherits',
+367 silly resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+367 silly resolved     version: '2.0.1',
+367 silly resolved     keywords:
+367 silly resolved      [ 'inheritance',
+367 silly resolved        'class',
+367 silly resolved        'klass',
+367 silly resolved        'oop',
+367 silly resolved        'object-oriented',
+367 silly resolved        'inherits',
+367 silly resolved        'browser',
+367 silly resolved        'browserify' ],
+367 silly resolved     main: './inherits.js',
+367 silly resolved     browser: './inherits_browser.js',
+367 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits' },
+367 silly resolved     license: 'ISC',
+367 silly resolved     scripts: { test: 'node test' },
+367 silly resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+367 silly resolved     _id: 'inherits@2.0.1',
+367 silly resolved     dist:
+367 silly resolved      { shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+367 silly resolved        tarball: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz' },
+367 silly resolved     _from: 'inherits@~2.0.1',
+367 silly resolved     _npmVersion: '1.3.8',
+367 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+367 silly resolved     maintainers: [ [Object] ],
+367 silly resolved     directories: {},
+367 silly resolved     _shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+367 silly resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
+367 silly resolved     readme: 'ERROR: No README data found!',
+367 silly resolved     homepage: 'https://github.com/isaacs/inherits' },
+367 silly resolved   { name: 'string_decoder',
+367 silly resolved     version: '0.10.31',
+367 silly resolved     description: 'The string_decoder module from Node core',
+367 silly resolved     main: 'index.js',
+367 silly resolved     dependencies: {},
+367 silly resolved     devDependencies: { tap: '~0.4.8' },
+367 silly resolved     scripts: { test: 'tap test/simple/*.js' },
+367 silly resolved     repository:
+367 silly resolved      { type: 'git',
+367 silly resolved        url: 'git://github.com/rvagg/string_decoder.git' },
+367 silly resolved     homepage: 'https://github.com/rvagg/string_decoder',
+367 silly resolved     keywords: [ 'string', 'decoder', 'browser', 'browserify' ],
+367 silly resolved     license: 'MIT',
+367 silly resolved     gitHead: 'd46d4fd87cf1d06e031c23f1ba170ca7d4ade9a0',
+367 silly resolved     bugs: { url: 'https://github.com/rvagg/string_decoder/issues' },
+367 silly resolved     _id: 'string_decoder@0.10.31',
+367 silly resolved     _shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+367 silly resolved     _from: 'string_decoder@~0.10.x',
+367 silly resolved     _npmVersion: '1.4.23',
+367 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+367 silly resolved     maintainers: [ [Object], [Object] ],
+367 silly resolved     dist:
+367 silly resolved      { shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+367 silly resolved        tarball: 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz' },
+367 silly resolved     directories: {},
+367 silly resolved     _resolved: 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz',
+367 silly resolved     readme: 'ERROR: No README data found!' } ]
+368 info install core-util-is@1.0.2 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+369 info install isarray@0.0.1 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+370 info install inherits@2.0.1 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+371 info install string_decoder@0.10.31 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+372 info installOne core-util-is@1.0.2
+373 info installOne isarray@0.0.1
+374 info installOne inherits@2.0.1
+375 info installOne string_decoder@0.10.31
+376 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is unbuild
+377 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits unbuild
+378 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray unbuild
+379 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder unbuild
+380 verbose tar unpack /home/vagrant/.npm/core-util-is/1.0.2/package.tgz
+381 silly lockFile b5cca190-stream-node-modules-core-util-is tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+382 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is /home/vagrant/.npm/b5cca190-stream-node-modules-core-util-is.lock
+383 silly lockFile 4e285413-m-core-util-is-1-0-2-package-tgz tar:///home/vagrant/.npm/core-util-is/1.0.2/package.tgz
+384 verbose lock tar:///home/vagrant/.npm/core-util-is/1.0.2/package.tgz /home/vagrant/.npm/4e285413-m-core-util-is-1-0-2-package-tgz.lock
+385 verbose tar unpack /home/vagrant/.npm/inherits/2.0.1/package.tgz
+386 silly lockFile c5b159ad-ble-stream-node-modules-inherits tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+387 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits /home/vagrant/.npm/c5b159ad-ble-stream-node-modules-inherits.lock
+388 silly lockFile 0632fcc2-t-npm-inherits-2-0-1-package-tgz tar:///home/vagrant/.npm/inherits/2.0.1/package.tgz
+389 verbose lock tar:///home/vagrant/.npm/inherits/2.0.1/package.tgz /home/vagrant/.npm/0632fcc2-t-npm-inherits-2-0-1-package-tgz.lock
+390 verbose tar unpack /home/vagrant/.npm/string_decoder/0.10.31/package.tgz
+391 silly lockFile 829a04eb-ream-node-modules-string-decoder tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+392 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder /home/vagrant/.npm/829a04eb-ream-node-modules-string-decoder.lock
+393 silly lockFile fb93cf79-ring-decoder-0-10-31-package-tgz tar:///home/vagrant/.npm/string_decoder/0.10.31/package.tgz
+394 verbose lock tar:///home/vagrant/.npm/string_decoder/0.10.31/package.tgz /home/vagrant/.npm/fb93cf79-ring-decoder-0-10-31-package-tgz.lock
+395 verbose tar unpack /home/vagrant/.npm/isarray/0.0.1/package.tgz
+396 silly lockFile 48105c40-able-stream-node-modules-isarray tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+397 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray /home/vagrant/.npm/48105c40-able-stream-node-modules-isarray.lock
+398 silly lockFile 8a0f2146-nt-npm-isarray-0-0-1-package-tgz tar:///home/vagrant/.npm/isarray/0.0.1/package.tgz
+399 verbose lock tar:///home/vagrant/.npm/isarray/0.0.1/package.tgz /home/vagrant/.npm/8a0f2146-nt-npm-isarray-0-0-1-package-tgz.lock
+400 silly gunzTarPerm modes [ '755', '644' ]
+401 silly gunzTarPerm modes [ '755', '644' ]
+402 silly gunzTarPerm modes [ '755', '644' ]
+403 silly gunzTarPerm modes [ '755', '644' ]
+404 silly gunzTarPerm extractEntry package.json
+405 silly gunzTarPerm extractEntry package.json
+406 silly gunzTarPerm extractEntry package.json
+407 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+408 silly gunzTarPerm extractEntry package.json
+409 silly gunzTarPerm extractEntry README.md
+410 silly gunzTarPerm extractEntry LICENSE
+411 silly gunzTarPerm extractEntry README.md
+412 silly gunzTarPerm extractEntry LICENSE
+413 silly gunzTarPerm extractEntry .npmignore
+414 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+415 silly gunzTarPerm extractEntry README.md
+416 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+417 silly gunzTarPerm extractEntry README.md
+418 silly gunzTarPerm extractEntry index.js
+419 silly gunzTarPerm extractEntry test.js
+420 silly gunzTarPerm extractEntry float.patch
+421 silly gunzTarPerm extractEntry inherits.js
+422 silly gunzTarPerm extractEntry inherits_browser.js
+423 silly gunzTarPerm extractEntry LICENSE
+424 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+425 silly gunzTarPerm extractEntry index.js
+426 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+427 silly gunzTarPerm extractEntry build/build.js
+428 silly gunzTarPerm extractEntry component.json
+429 silly gunzTarPerm extractEntry lib/util.js
+430 silly gunzTarPerm extractEntry test.js
+431 silly lockFile c4c9f073-mongodb-node-modules-es6-promise tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/es6-promise
+432 silly lockFile c4c9f073-mongodb-node-modules-es6-promise tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/es6-promise
+433 silly lockFile 21d9fb55-pm-es6-promise-3-0-2-package-tgz tar:///home/vagrant/.npm/es6-promise/3.0.2/package.tgz
+434 silly lockFile 21d9fb55-pm-es6-promise-3-0-2-package-tgz tar:///home/vagrant/.npm/es6-promise/3.0.2/package.tgz
+435 info preinstall es6-promise@3.0.2
+436 verbose readDependencies using package.json deps
+437 verbose readDependencies using package.json deps
+438 silly resolved []
+439 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/es6-promise
+440 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/es6-promise
+441 verbose linkStuff [ false,
+441 verbose linkStuff   false,
+441 verbose linkStuff   false,
+441 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules' ]
+442 info linkStuff es6-promise@3.0.2
+443 verbose linkBins es6-promise@3.0.2
+444 verbose linkMans es6-promise@3.0.2
+445 verbose rebuildBundles es6-promise@3.0.2
+446 info install es6-promise@3.0.2
+447 info postinstall es6-promise@3.0.2
+448 silly lockFile 829a04eb-ream-node-modules-string-decoder tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+449 silly lockFile 829a04eb-ream-node-modules-string-decoder tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+450 silly lockFile fb93cf79-ring-decoder-0-10-31-package-tgz tar:///home/vagrant/.npm/string_decoder/0.10.31/package.tgz
+451 silly lockFile fb93cf79-ring-decoder-0-10-31-package-tgz tar:///home/vagrant/.npm/string_decoder/0.10.31/package.tgz
+452 silly lockFile 48105c40-able-stream-node-modules-isarray tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+453 silly lockFile 48105c40-able-stream-node-modules-isarray tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+454 silly lockFile 8a0f2146-nt-npm-isarray-0-0-1-package-tgz tar:///home/vagrant/.npm/isarray/0.0.1/package.tgz
+455 silly lockFile 8a0f2146-nt-npm-isarray-0-0-1-package-tgz tar:///home/vagrant/.npm/isarray/0.0.1/package.tgz
+456 info preinstall string_decoder@0.10.31
+457 silly lockFile c5b159ad-ble-stream-node-modules-inherits tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+458 silly lockFile c5b159ad-ble-stream-node-modules-inherits tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+459 silly lockFile 0632fcc2-t-npm-inherits-2-0-1-package-tgz tar:///home/vagrant/.npm/inherits/2.0.1/package.tgz
+460 silly lockFile 0632fcc2-t-npm-inherits-2-0-1-package-tgz tar:///home/vagrant/.npm/inherits/2.0.1/package.tgz
+461 info preinstall isarray@0.0.1
+462 verbose readDependencies using package.json deps
+463 info preinstall inherits@2.0.1
+464 verbose readDependencies using package.json deps
+465 silly resolved []
+466 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+467 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+468 verbose linkStuff [ false,
+468 verbose linkStuff   false,
+468 verbose linkStuff   false,
+468 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+469 info linkStuff string_decoder@0.10.31
+470 verbose linkBins string_decoder@0.10.31
+471 verbose linkMans string_decoder@0.10.31
+472 verbose rebuildBundles string_decoder@0.10.31
+473 info install string_decoder@0.10.31
+474 verbose readDependencies using package.json deps
+475 info postinstall string_decoder@0.10.31
+476 verbose readDependencies using package.json deps
+477 verbose readDependencies using package.json deps
+478 silly resolved []
+479 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+480 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+481 verbose linkStuff [ false,
+481 verbose linkStuff   false,
+481 verbose linkStuff   false,
+481 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+482 info linkStuff isarray@0.0.1
+483 verbose linkBins isarray@0.0.1
+484 verbose linkMans isarray@0.0.1
+485 verbose rebuildBundles isarray@0.0.1
+486 verbose readDependencies using package.json deps
+487 silly resolved []
+488 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+489 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+490 verbose linkStuff [ false,
+490 verbose linkStuff   false,
+490 verbose linkStuff   false,
+490 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+491 info linkStuff inherits@2.0.1
+492 verbose linkBins inherits@2.0.1
+493 verbose linkMans inherits@2.0.1
+494 verbose rebuildBundles inherits@2.0.1
+495 info install isarray@0.0.1
+496 info install inherits@2.0.1
+497 info postinstall isarray@0.0.1
+498 info postinstall inherits@2.0.1
+499 silly lockFile b5cca190-stream-node-modules-core-util-is tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+500 silly lockFile b5cca190-stream-node-modules-core-util-is tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+501 silly lockFile 4e285413-m-core-util-is-1-0-2-package-tgz tar:///home/vagrant/.npm/core-util-is/1.0.2/package.tgz
+502 silly lockFile 4e285413-m-core-util-is-1-0-2-package-tgz tar:///home/vagrant/.npm/core-util-is/1.0.2/package.tgz
+503 info preinstall core-util-is@1.0.2
+504 verbose readDependencies using package.json deps
+505 verbose readDependencies using package.json deps
+506 silly resolved []
+507 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+508 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+509 verbose linkStuff [ false,
+509 verbose linkStuff   false,
+509 verbose linkStuff   false,
+509 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+510 info linkStuff core-util-is@1.0.2
+511 verbose linkBins core-util-is@1.0.2
+512 verbose linkMans core-util-is@1.0.2
+513 verbose rebuildBundles core-util-is@1.0.2
+514 info install core-util-is@1.0.2
+515 info postinstall core-util-is@1.0.2
+516 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+517 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/readable-stream
+518 verbose linkStuff [ false,
+518 verbose linkStuff   false,
+518 verbose linkStuff   false,
+518 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules' ]
+519 info linkStuff readable-stream@1.0.31
+520 verbose linkBins readable-stream@1.0.31
+521 verbose linkMans readable-stream@1.0.31
+522 verbose rebuildBundles readable-stream@1.0.31
+523 verbose rebuildBundles [ 'core-util-is', 'inherits', 'isarray', 'string_decoder' ]
+524 info install readable-stream@1.0.31
+525 info postinstall readable-stream@1.0.31
+526 silly lockFile 744ccbc0-ongodb-node-modules-mongodb-core tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core
+527 silly lockFile 744ccbc0-ongodb-node-modules-mongodb-core tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core
+528 silly lockFile 8e7c2c47--mongodb-core-1-3-16-package-tgz tar:///home/vagrant/.npm/mongodb-core/1.3.16/package.tgz
+529 silly lockFile 8e7c2c47--mongodb-core-1-3-16-package-tgz tar:///home/vagrant/.npm/mongodb-core/1.3.16/package.tgz
+530 info preinstall mongodb-core@1.3.16
+531 verbose readDependencies using package.json deps
+532 verbose readDependencies using package.json deps
+533 verbose cache add [ 'bson@~0.4.21', null ]
+534 verbose cache add name=undefined spec="bson@~0.4.21" args=["bson@~0.4.21",null]
+535 verbose parsed url { protocol: null,
+535 verbose parsed url   slashes: null,
+535 verbose parsed url   auth: null,
+535 verbose parsed url   host: null,
+535 verbose parsed url   port: null,
+535 verbose parsed url   hostname: null,
+535 verbose parsed url   hash: null,
+535 verbose parsed url   search: null,
+535 verbose parsed url   query: null,
+535 verbose parsed url   pathname: 'bson@~0.4.21',
+535 verbose parsed url   path: 'bson@~0.4.21',
+535 verbose parsed url   href: 'bson@~0.4.21' }
+536 verbose cache add [ 'require_optional@~1.0.0', null ]
+537 verbose cache add name=undefined spec="require_optional@~1.0.0" args=["require_optional@~1.0.0",null]
+538 verbose parsed url { protocol: null,
+538 verbose parsed url   slashes: null,
+538 verbose parsed url   auth: null,
+538 verbose parsed url   host: null,
+538 verbose parsed url   port: null,
+538 verbose parsed url   hostname: null,
+538 verbose parsed url   hash: null,
+538 verbose parsed url   search: null,
+538 verbose parsed url   query: null,
+538 verbose parsed url   pathname: 'require_optional@~1.0.0',
+538 verbose parsed url   path: 'require_optional@~1.0.0',
+538 verbose parsed url   href: 'require_optional@~1.0.0' }
+539 verbose cache add name="bson" spec="~0.4.21" args=["bson","~0.4.21"]
+540 verbose parsed url { protocol: null,
+540 verbose parsed url   slashes: null,
+540 verbose parsed url   auth: null,
+540 verbose parsed url   host: null,
+540 verbose parsed url   port: null,
+540 verbose parsed url   hostname: null,
+540 verbose parsed url   hash: null,
+540 verbose parsed url   search: null,
+540 verbose parsed url   query: null,
+540 verbose parsed url   pathname: '~0.4.21',
+540 verbose parsed url   path: '~0.4.21',
+540 verbose parsed url   href: '~0.4.21' }
+541 verbose addNamed [ 'bson', '~0.4.21' ]
+542 verbose addNamed [ null, '>=0.4.21-0 <0.5.0-0' ]
+543 silly lockFile 237aafc6-bson-0-4-21 bson@~0.4.21
+544 verbose lock bson@~0.4.21 /home/vagrant/.npm/237aafc6-bson-0-4-21.lock
+545 verbose cache add name="require_optional" spec="~1.0.0" args=["require_optional","~1.0.0"]
+546 verbose parsed url { protocol: null,
+546 verbose parsed url   slashes: null,
+546 verbose parsed url   auth: null,
+546 verbose parsed url   host: null,
+546 verbose parsed url   port: null,
+546 verbose parsed url   hostname: null,
+546 verbose parsed url   hash: null,
+546 verbose parsed url   search: null,
+546 verbose parsed url   query: null,
+546 verbose parsed url   pathname: '~1.0.0',
+546 verbose parsed url   path: '~1.0.0',
+546 verbose parsed url   href: '~1.0.0' }
+547 verbose addNamed [ 'require_optional', '~1.0.0' ]
+548 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+549 silly lockFile 82ae0771-require-optional-1-0-0 require_optional@~1.0.0
+550 verbose lock require_optional@~1.0.0 /home/vagrant/.npm/82ae0771-require-optional-1-0-0.lock
+551 silly addNameRange { name: 'bson', range: '>=0.4.21-0 <0.5.0-0', hasData: false }
+552 silly addNameRange { name: 'require_optional',
+552 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+552 silly addNameRange   hasData: false }
+553 verbose url raw bson
+554 verbose url resolving [ 'https://registry.npmjs.org/', './bson' ]
+555 verbose url resolved https://registry.npmjs.org/bson
+556 info trying registry request attempt 1 at 18:41:29
+557 verbose etag "3PEMZ0AC3NMQAQEJRRTZS5D68"
+558 http GET https://registry.npmjs.org/bson
+559 verbose url raw require_optional
+560 verbose url resolving [ 'https://registry.npmjs.org/', './require_optional' ]
+561 verbose url resolved https://registry.npmjs.org/require_optional
+562 info trying registry request attempt 1 at 18:41:29
+563 verbose etag "3CROVS301FTIAWGRNLHA420GU"
+564 http GET https://registry.npmjs.org/require_optional
+565 http 200 https://registry.npmjs.org/bson
+566 silly registry.get cb [ 200,
+566 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+566 silly registry.get     etag: '"F1SFUO1XZS2EMWKKD7LLHSCAL"',
+566 silly registry.get     'content-type': 'application/json',
+566 silly registry.get     'cache-control': 'max-age=300',
+566 silly registry.get     'content-length': '86182',
+566 silly registry.get     'accept-ranges': 'bytes',
+566 silly registry.get     date: 'Thu, 21 Apr 2016 18:41:31 GMT',
+566 silly registry.get     via: '1.1 varnish',
+566 silly registry.get     age: '68',
+566 silly registry.get     connection: 'keep-alive',
+566 silly registry.get     'x-served-by': 'cache-iad2142-IAD',
+566 silly registry.get     'x-cache': 'HIT',
+566 silly registry.get     'x-cache-hits': '1',
+566 silly registry.get     'x-timer': 'S1461264091.943430,VS0,VE0',
+566 silly registry.get     vary: 'Accept-Encoding' } ]
+567 silly addNameRange number 2 { name: 'bson', range: '>=0.4.21-0 <0.5.0-0', hasData: true }
+568 silly addNameRange versions [ 'bson',
+568 silly addNameRange   [ '0.0.1',
+568 silly addNameRange     '0.0.2',
+568 silly addNameRange     '0.0.3',
+568 silly addNameRange     '0.0.4',
+568 silly addNameRange     '0.0.5',
+568 silly addNameRange     '0.0.6',
+568 silly addNameRange     '0.0.7',
+568 silly addNameRange     '0.0.8',
+568 silly addNameRange     '0.0.9',
+568 silly addNameRange     '0.1.0',
+568 silly addNameRange     '0.1.1',
+568 silly addNameRange     '0.1.3',
+568 silly addNameRange     '0.1.4',
+568 silly addNameRange     '0.1.5',
+568 silly addNameRange     '0.1.6',
+568 silly addNameRange     '0.1.7',
+568 silly addNameRange     '0.1.8',
+568 silly addNameRange     '0.1.9',
+568 silly addNameRange     '0.2.0',
+568 silly addNameRange     '0.2.1',
+568 silly addNameRange     '0.2.2',
+568 silly addNameRange     '0.2.3',
+568 silly addNameRange     '0.2.4',
+568 silly addNameRange     '0.2.5',
+568 silly addNameRange     '0.2.6',
+568 silly addNameRange     '0.2.7',
+568 silly addNameRange     '0.2.8',
+568 silly addNameRange     '0.2.9',
+568 silly addNameRange     '0.2.10',
+568 silly addNameRange     '0.2.11',
+568 silly addNameRange     '0.2.12',
+568 silly addNameRange     '0.2.13',
+568 silly addNameRange     '0.2.14',
+568 silly addNameRange     '0.2.15',
+568 silly addNameRange     '0.2.16',
+568 silly addNameRange     '0.2.17',
+568 silly addNameRange     '0.2.18',
+568 silly addNameRange     '0.2.19',
+568 silly addNameRange     '0.2.20',
+568 silly addNameRange     '0.2.21',
+568 silly addNameRange     '0.3.0',
+568 silly addNameRange     '0.3.1',
+568 silly addNameRange     '0.3.2',
+568 silly addNameRange     '0.4.0',
+568 silly addNameRange     '0.4.1',
+568 silly addNameRange     '0.4.2',
+568 silly addNameRange     '0.4.3',
+568 silly addNameRange     '0.4.4',
+568 silly addNameRange     '0.4.5',
+568 silly addNameRange     '0.4.6',
+568 silly addNameRange     '0.4.7',
+568 silly addNameRange     '0.4.8',
+568 silly addNameRange     '0.2.22',
+568 silly addNameRange     '0.4.10',
+568 silly addNameRange     '0.4.12',
+568 silly addNameRange     '0.4.13',
+568 silly addNameRange     '0.4.14',
+568 silly addNameRange     '0.4.15',
+568 silly addNameRange     '0.4.16',
+568 silly addNameRange     '0.4.17',
+568 silly addNameRange     '0.4.18',
+568 silly addNameRange     '0.4.19',
+568 silly addNameRange     '0.4.20',
+568 silly addNameRange     '0.4.21',
+568 silly addNameRange     '0.4.22',
+568 silly addNameRange     '0.4.23' ] ]
+569 verbose addNamed [ 'bson', '0.4.23' ]
+570 verbose addNamed [ '0.4.23', '0.4.23' ]
+571 silly lockFile dd2599bf-bson-0-4-23 bson@0.4.23
+572 verbose lock bson@0.4.23 /home/vagrant/.npm/dd2599bf-bson-0-4-23.lock
+573 silly lockFile dd2599bf-bson-0-4-23 bson@0.4.23
+574 silly lockFile dd2599bf-bson-0-4-23 bson@0.4.23
+575 silly lockFile 237aafc6-bson-0-4-21 bson@~0.4.21
+576 silly lockFile 237aafc6-bson-0-4-21 bson@~0.4.21
+577 http 304 https://registry.npmjs.org/require_optional
+578 silly registry.get cb [ 304,
+578 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:31 GMT',
+578 silly registry.get     via: '1.1 varnish',
+578 silly registry.get     'cache-control': 'max-age=300',
+578 silly registry.get     etag: '"3CROVS301FTIAWGRNLHA420GU"',
+578 silly registry.get     age: '0',
+578 silly registry.get     connection: 'keep-alive',
+578 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+578 silly registry.get     'x-cache': 'HIT',
+578 silly registry.get     'x-cache-hits': '1',
+578 silly registry.get     'x-timer': 'S1461264091.942723,VS0,VE359',
+578 silly registry.get     vary: 'Accept-Encoding' } ]
+579 verbose etag require_optional from cache
+580 silly addNameRange number 2 { name: 'require_optional',
+580 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+580 silly addNameRange   hasData: true }
+581 silly addNameRange versions [ 'require_optional', [ '1.0.0' ] ]
+582 verbose addNamed [ 'require_optional', '1.0.0' ]
+583 verbose addNamed [ '1.0.0', '1.0.0' ]
+584 silly lockFile 82a75d1b-require-optional-1-0-0 require_optional@1.0.0
+585 verbose lock require_optional@1.0.0 /home/vagrant/.npm/82a75d1b-require-optional-1-0-0.lock
+586 silly lockFile 82a75d1b-require-optional-1-0-0 require_optional@1.0.0
+587 silly lockFile 82a75d1b-require-optional-1-0-0 require_optional@1.0.0
+588 silly lockFile 82ae0771-require-optional-1-0-0 require_optional@~1.0.0
+589 silly lockFile 82ae0771-require-optional-1-0-0 require_optional@~1.0.0
+590 silly resolved [ { name: 'bson',
+590 silly resolved     description: 'A bson parser for node.js and the browser',
+590 silly resolved     keywords: [ 'mongodb', 'bson', 'parser' ],
+590 silly resolved     version: '0.4.23',
+590 silly resolved     author: { name: 'Christian Amor Kvalheim', email: 'christkv@gmail.com' },
+590 silly resolved     contributors: [],
+590 silly resolved     repository: { type: 'git', url: 'git://github.com/mongodb/js-bson.git' },
+590 silly resolved     bugs: { url: 'https://github.com/mongodb/js-bson/issues' },
+590 silly resolved     devDependencies:
+590 silly resolved      { nodeunit: '0.9.0',
+590 silly resolved        gleak: '0.2.3',
+590 silly resolved        benchmark: '1.0.0',
+590 silly resolved        colors: '1.1.0' },
+590 silly resolved     config: { native: false },
+590 silly resolved     main: './lib/bson/index',
+590 silly resolved     directories: { lib: './lib/bson' },
+590 silly resolved     engines: { node: '>=0.6.19' },
+590 silly resolved     scripts: { test: 'nodeunit ./test/node' },
+590 silly resolved     browser: 'lib/bson/bson.js',
+590 silly resolved     license: 'Apache-2.0',
+590 silly resolved     gitHead: '528680fa751300364f7a939258b621740613f8ae',
+590 silly resolved     homepage: 'https://github.com/mongodb/js-bson',
+590 silly resolved     _id: 'bson@0.4.23',
+590 silly resolved     _shasum: 'e65a2e3c7507ffade4109bc7575a76e50f8da915',
+590 silly resolved     _from: 'bson@~0.4.21',
+590 silly resolved     _npmVersion: '2.15.0',
+590 silly resolved     _nodeVersion: '4.4.2',
+590 silly resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+590 silly resolved     maintainers: [ [Object], [Object] ],
+590 silly resolved     dist:
+590 silly resolved      { shasum: 'e65a2e3c7507ffade4109bc7575a76e50f8da915',
+590 silly resolved        tarball: 'https://registry.npmjs.org/bson/-/bson-0.4.23.tgz' },
+590 silly resolved     _npmOperationalInternal:
+590 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+590 silly resolved        tmp: 'tmp/bson-0.4.23.tgz_1460102555550_0.1291605734732002' },
+590 silly resolved     _resolved: 'https://registry.npmjs.org/bson/-/bson-0.4.23.tgz',
+590 silly resolved     readme: 'ERROR: No README data found!' },
+590 silly resolved   { name: 'require_optional',
+590 silly resolved     version: '1.0.0',
+590 silly resolved     description: 'Allows you declare optionalPeerDependencies that can be satisfied by the top level module but ignored if they are not.',
+590 silly resolved     main: 'index.js',
+590 silly resolved     scripts: { test: 'mocha' },
+590 silly resolved     repository:
+590 silly resolved      { type: 'git',
+590 silly resolved        url: 'https://github.com/christkv/require_optional.git' },
+590 silly resolved     keywords: [ 'optional', 'require', 'optionalPeerDependencies' ],
+590 silly resolved     author: { name: 'Christian Kvalheim Amor' },
+590 silly resolved     license: 'Apache-2.0',
+590 silly resolved     bugs: { url: 'https://github.com/christkv/require_optional/issues' },
+590 silly resolved     homepage: 'https://github.com/christkv/require_optional',
+590 silly resolved     dependencies: { semver: '^5.1.0', 'resolve-from': '^2.0.0' },
+590 silly resolved     devDependencies:
+590 silly resolved      { bson: '0.4.21',
+590 silly resolved        co: '4.6.0',
+590 silly resolved        'es6-promise': '^3.0.2',
+590 silly resolved        mocha: '^2.4.5' },
+590 silly resolved     peerOptionalDependencies:
+590 silly resolved      { co: '>=5.6.0',
+590 silly resolved        'es6-promise': '^3.0.2',
+590 silly resolved        'es6-promise2': '^4.0.2',
+590 silly resolved        bson: '0.4.21' },
+590 silly resolved     gitHead: '8eac964c8e31166a8fb483d0d56025b185cee03f',
+590 silly resolved     _id: 'require_optional@1.0.0',
+590 silly resolved     _shasum: '52a86137a849728eb60a55533617f8f914f59abf',
+590 silly resolved     _from: 'require_optional@~1.0.0',
+590 silly resolved     _npmVersion: '2.14.12',
+590 silly resolved     _nodeVersion: '4.2.4',
+590 silly resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+590 silly resolved     maintainers: [ [Object] ],
+590 silly resolved     dist:
+590 silly resolved      { shasum: '52a86137a849728eb60a55533617f8f914f59abf',
+590 silly resolved        tarball: 'https://registry.npmjs.org/require_optional/-/require_optional-1.0.0.tgz' },
+590 silly resolved     _npmOperationalInternal:
+590 silly resolved      { host: 'packages-5-east.internal.npmjs.com',
+590 silly resolved        tmp: 'tmp/require_optional-1.0.0.tgz_1454503936164_0.7571216486394405' },
+590 silly resolved     directories: {},
+590 silly resolved     _resolved: 'https://registry.npmjs.org/require_optional/-/require_optional-1.0.0.tgz',
+590 silly resolved     readme: 'ERROR: No README data found!' } ]
+591 info install bson@0.4.23 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core
+592 info install require_optional@1.0.0 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core
+593 info installOne bson@0.4.23
+594 info installOne require_optional@1.0.0
+595 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional unbuild
+596 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson unbuild
+597 verbose tar unpack /home/vagrant/.npm/require_optional/1.0.0/package.tgz
+598 silly lockFile ad8e12f4-re-node-modules-require-optional tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+599 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional /home/vagrant/.npm/ad8e12f4-re-node-modules-require-optional.lock
+600 silly lockFile 88d03993-quire-optional-1-0-0-package-tgz tar:///home/vagrant/.npm/require_optional/1.0.0/package.tgz
+601 verbose lock tar:///home/vagrant/.npm/require_optional/1.0.0/package.tgz /home/vagrant/.npm/88d03993-quire-optional-1-0-0-package-tgz.lock
+602 verbose tar unpack /home/vagrant/.npm/bson/0.4.23/package.tgz
+603 silly lockFile aa7bac08-s-mongodb-core-node-modules-bson tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+604 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson /home/vagrant/.npm/aa7bac08-s-mongodb-core-node-modules-bson.lock
+605 silly lockFile 632a27e5-rant-npm-bson-0-4-23-package-tgz tar:///home/vagrant/.npm/bson/0.4.23/package.tgz
+606 verbose lock tar:///home/vagrant/.npm/bson/0.4.23/package.tgz /home/vagrant/.npm/632a27e5-rant-npm-bson-0-4-23-package-tgz.lock
+607 silly gunzTarPerm modes [ '755', '644' ]
+608 silly gunzTarPerm modes [ '755', '644' ]
+609 silly gunzTarPerm extractEntry package.json
+610 silly gunzTarPerm extractEntry package.json
+611 silly gunzTarPerm extractEntry .npmignore
+612 silly gunzTarPerm extractEntry README.md
+613 silly gunzTarPerm extractEntry README.md
+614 silly gunzTarPerm extractEntry LICENSE
+615 silly gunzTarPerm extractEntry LICENSE
+616 silly gunzTarPerm extractEntry index.js
+617 silly gunzTarPerm extractEntry .travis.yml
+618 silly gunzTarPerm extractEntry test/require_optional_tests.js
+619 silly gunzTarPerm extractEntry deserializer_bak.js
+620 silly gunzTarPerm extractEntry bower.json
+621 silly gunzTarPerm extractEntry alternate_parsers/bson.js
+622 silly gunzTarPerm extractEntry alternate_parsers/faster_bson.js
+623 silly gunzTarPerm extractEntry HISTORY
+624 silly gunzTarPerm extractEntry browser_build/package.json
+625 silly gunzTarPerm extractEntry browser_build/bson.js
+626 silly gunzTarPerm extractEntry lib/bson/binary.js
+627 silly gunzTarPerm extractEntry lib/bson/db_ref.js
+628 silly lockFile ad8e12f4-re-node-modules-require-optional tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+629 silly lockFile ad8e12f4-re-node-modules-require-optional tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+630 silly lockFile 88d03993-quire-optional-1-0-0-package-tgz tar:///home/vagrant/.npm/require_optional/1.0.0/package.tgz
+631 silly lockFile 88d03993-quire-optional-1-0-0-package-tgz tar:///home/vagrant/.npm/require_optional/1.0.0/package.tgz
+632 info preinstall require_optional@1.0.0
+633 verbose readDependencies using package.json deps
+634 verbose readDependencies using package.json deps
+635 verbose cache add [ 'semver@^5.1.0', null ]
+636 verbose cache add name=undefined spec="semver@^5.1.0" args=["semver@^5.1.0",null]
+637 verbose parsed url { protocol: null,
+637 verbose parsed url   slashes: null,
+637 verbose parsed url   auth: null,
+637 verbose parsed url   host: null,
+637 verbose parsed url   port: null,
+637 verbose parsed url   hostname: null,
+637 verbose parsed url   hash: null,
+637 verbose parsed url   search: null,
+637 verbose parsed url   query: null,
+637 verbose parsed url   pathname: 'semver@^5.1.0',
+637 verbose parsed url   path: 'semver@^5.1.0',
+637 verbose parsed url   href: 'semver@^5.1.0' }
+638 verbose cache add name="semver" spec="^5.1.0" args=["semver","^5.1.0"]
+639 verbose parsed url { protocol: null,
+639 verbose parsed url   slashes: null,
+639 verbose parsed url   auth: null,
+639 verbose parsed url   host: null,
+639 verbose parsed url   port: null,
+639 verbose parsed url   hostname: null,
+639 verbose parsed url   hash: null,
+639 verbose parsed url   search: null,
+639 verbose parsed url   query: null,
+639 verbose parsed url   pathname: '^5.1.0',
+639 verbose parsed url   path: '^5.1.0',
+639 verbose parsed url   href: '^5.1.0' }
+640 verbose addNamed [ 'semver', '^5.1.0' ]
+641 verbose addNamed [ null, '>=5.1.0-0 <6.0.0-0' ]
+642 silly lockFile 2d444a4b-semver-5-1-0 semver@^5.1.0
+643 verbose lock semver@^5.1.0 /home/vagrant/.npm/2d444a4b-semver-5-1-0.lock
+644 verbose cache add [ 'resolve-from@^2.0.0', null ]
+645 verbose cache add name=undefined spec="resolve-from@^2.0.0" args=["resolve-from@^2.0.0",null]
+646 verbose parsed url { protocol: null,
+646 verbose parsed url   slashes: null,
+646 verbose parsed url   auth: null,
+646 verbose parsed url   host: null,
+646 verbose parsed url   port: null,
+646 verbose parsed url   hostname: null,
+646 verbose parsed url   hash: null,
+646 verbose parsed url   search: null,
+646 verbose parsed url   query: null,
+646 verbose parsed url   pathname: 'resolve-from@^2.0.0',
+646 verbose parsed url   path: 'resolve-from@^2.0.0',
+646 verbose parsed url   href: 'resolve-from@^2.0.0' }
+647 verbose cache add name="resolve-from" spec="^2.0.0" args=["resolve-from","^2.0.0"]
+648 verbose parsed url { protocol: null,
+648 verbose parsed url   slashes: null,
+648 verbose parsed url   auth: null,
+648 verbose parsed url   host: null,
+648 verbose parsed url   port: null,
+648 verbose parsed url   hostname: null,
+648 verbose parsed url   hash: null,
+648 verbose parsed url   search: null,
+648 verbose parsed url   query: null,
+648 verbose parsed url   pathname: '^2.0.0',
+648 verbose parsed url   path: '^2.0.0',
+648 verbose parsed url   href: '^2.0.0' }
+649 verbose addNamed [ 'resolve-from', '^2.0.0' ]
+650 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+651 silly lockFile f135d8bc-resolve-from-2-0-0 resolve-from@^2.0.0
+652 verbose lock resolve-from@^2.0.0 /home/vagrant/.npm/f135d8bc-resolve-from-2-0-0.lock
+653 silly addNameRange { name: 'semver', range: '>=5.1.0-0 <6.0.0-0', hasData: false }
+654 silly addNameRange { name: 'resolve-from',
+654 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+654 silly addNameRange   hasData: false }
+655 verbose url raw semver
+656 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+657 verbose url resolved https://registry.npmjs.org/semver
+658 info trying registry request attempt 1 at 18:41:31
+659 verbose etag "9M2O0DOJL1ZK378CQ1L1GIBFQ"
+660 http GET https://registry.npmjs.org/semver
+661 verbose url raw resolve-from
+662 verbose url resolving [ 'https://registry.npmjs.org/', './resolve-from' ]
+663 verbose url resolved https://registry.npmjs.org/resolve-from
+664 info trying registry request attempt 1 at 18:41:31
+665 verbose etag "1VG6ZO81SA4UJHBLCUA606P33"
+666 http GET https://registry.npmjs.org/resolve-from
+667 silly gunzTarPerm extractEntry lib/bson/double.js
+668 silly gunzTarPerm extractEntry lib/bson/float_parser.js
+669 silly gunzTarPerm extractEntry lib/bson/index.js
+670 silly gunzTarPerm extractEntry lib/bson/code.js
+671 silly gunzTarPerm extractEntry lib/bson/map.js
+672 silly gunzTarPerm extractEntry lib/bson/max_key.js
+673 silly gunzTarPerm extractEntry lib/bson/min_key.js
+674 silly gunzTarPerm extractEntry lib/bson/objectid.js
+675 http 304 https://registry.npmjs.org/semver
+676 silly registry.get cb [ 304,
+676 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:33 GMT',
+676 silly registry.get     via: '1.1 varnish',
+676 silly registry.get     'cache-control': 'max-age=300',
+676 silly registry.get     etag: '"9M2O0DOJL1ZK378CQ1L1GIBFQ"',
+676 silly registry.get     age: '152',
+676 silly registry.get     connection: 'keep-alive',
+676 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+676 silly registry.get     'x-cache': 'HIT',
+676 silly registry.get     'x-cache-hits': '19',
+676 silly registry.get     'x-timer': 'S1461264093.594287,VS0,VE0',
+676 silly registry.get     vary: 'Accept-Encoding' } ]
+677 verbose etag semver from cache
+678 http 304 https://registry.npmjs.org/resolve-from
+679 silly registry.get cb [ 304,
+679 silly registry.get   { date: 'Thu, 21 Apr 2016 18:41:33 GMT',
+679 silly registry.get     via: '1.1 varnish',
+679 silly registry.get     'cache-control': 'max-age=300',
+679 silly registry.get     etag: '"1VG6ZO81SA4UJHBLCUA606P33"',
+679 silly registry.get     age: '281',
+679 silly registry.get     connection: 'keep-alive',
+679 silly registry.get     'x-served-by': 'cache-iad2144-IAD',
+679 silly registry.get     'x-cache': 'HIT',
+679 silly registry.get     'x-cache-hits': '6',
+679 silly registry.get     'x-timer': 'S1461264093.612839,VS0,VE0',
+679 silly registry.get     vary: 'Accept-Encoding' } ]
+680 verbose etag resolve-from from cache
+681 silly addNameRange number 2 { name: 'semver', range: '>=5.1.0-0 <6.0.0-0', hasData: true }
+682 silly addNameRange versions [ 'semver',
+682 silly addNameRange   [ '1.0.0',
+682 silly addNameRange     '1.0.1',
+682 silly addNameRange     '1.0.2',
+682 silly addNameRange     '1.0.3',
+682 silly addNameRange     '1.0.4',
+682 silly addNameRange     '1.0.5',
+682 silly addNameRange     '1.0.6',
+682 silly addNameRange     '1.0.7',
+682 silly addNameRange     '1.0.8',
+682 silly addNameRange     '1.0.9',
+682 silly addNameRange     '1.0.10',
+682 silly addNameRange     '1.0.11',
+682 silly addNameRange     '1.0.12',
+682 silly addNameRange     '1.0.13',
+682 silly addNameRange     '1.0.14',
+682 silly addNameRange     '1.1.0',
+682 silly addNameRange     '1.1.1',
+682 silly addNameRange     '1.1.2',
+682 silly addNameRange     '1.1.3',
+682 silly addNameRange     '1.1.4',
+682 silly addNameRange     '2.0.0-alpha',
+682 silly addNameRange     '2.0.0-beta',
+682 silly addNameRange     '2.0.1',
+682 silly addNameRange     '2.0.2',
+682 silly addNameRange     '2.0.3',
+682 silly addNameRange     '2.0.4',
+682 silly addNameRange     '2.0.5',
+682 silly addNameRange     '2.0.6',
+682 silly addNameRange     '2.0.7',
+682 silly addNameRange     '2.0.8',
+682 silly addNameRange     '2.0.9',
+682 silly addNameRange     '2.0.10',
+682 silly addNameRange     '2.0.11',
+682 silly addNameRange     '2.1.0',
+682 silly addNameRange     '2.2.0',
+682 silly addNameRange     '2.2.1',
+682 silly addNameRange     '2.3.0',
+682 silly addNameRange     '2.3.1',
+682 silly addNameRange     '2.3.2',
+682 silly addNameRange     '3.0.0',
+682 silly addNameRange     '3.0.1',
+682 silly addNameRange     '4.0.0',
+682 silly addNameRange     '4.0.2',
+682 silly addNameRange     '4.0.3',
+682 silly addNameRange     '4.1.0',
+682 silly addNameRange     '4.1.1',
+682 silly addNameRange     '4.2.0',
+682 silly addNameRange     '4.2.1',
+682 silly addNameRange     '4.2.2',
+682 silly addNameRange     '4.3.0',
+682 silly addNameRange     '4.3.1',
+682 silly addNameRange     '4.3.2',
+682 silly addNameRange     '4.3.3',
+682 silly addNameRange     '4.3.4',
+682 silly addNameRange     '4.3.5',
+682 silly addNameRange     '4.3.6',
+682 silly addNameRange     '5.0.0',
+682 silly addNameRange     '5.0.1',
+682 silly addNameRange     '5.0.2',
+682 silly addNameRange     '5.0.3',
+682 silly addNameRange     '5.1.0' ] ]
+683 verbose addNamed [ 'semver', '5.1.0' ]
+684 verbose addNamed [ '5.1.0', '5.1.0' ]
+685 silly lockFile 8b0493fe-semver-5-1-0 semver@5.1.0
+686 verbose lock semver@5.1.0 /home/vagrant/.npm/8b0493fe-semver-5-1-0.lock
+687 silly addNameRange number 2 { name: 'resolve-from',
+687 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+687 silly addNameRange   hasData: true }
+688 silly addNameRange versions [ 'resolve-from', [ '1.0.0', '1.0.1', '2.0.0' ] ]
+689 verbose addNamed [ 'resolve-from', '2.0.0' ]
+690 verbose addNamed [ '2.0.0', '2.0.0' ]
+691 silly lockFile a4419e92-resolve-from-2-0-0 resolve-from@2.0.0
+692 verbose lock resolve-from@2.0.0 /home/vagrant/.npm/a4419e92-resolve-from-2-0-0.lock
+693 silly lockFile 8b0493fe-semver-5-1-0 semver@5.1.0
+694 silly lockFile 8b0493fe-semver-5-1-0 semver@5.1.0
+695 silly lockFile a4419e92-resolve-from-2-0-0 resolve-from@2.0.0
+696 silly lockFile a4419e92-resolve-from-2-0-0 resolve-from@2.0.0
+697 silly lockFile 2d444a4b-semver-5-1-0 semver@^5.1.0
+698 silly lockFile 2d444a4b-semver-5-1-0 semver@^5.1.0
+699 silly lockFile f135d8bc-resolve-from-2-0-0 resolve-from@^2.0.0
+700 silly lockFile f135d8bc-resolve-from-2-0-0 resolve-from@^2.0.0
+701 silly resolved [ { name: 'semver',
+701 silly resolved     version: '5.1.0',
+701 silly resolved     description: 'The semantic version parser used by npm.',
+701 silly resolved     main: 'semver.js',
+701 silly resolved     scripts: { test: 'tap test/*.js' },
+701 silly resolved     devDependencies: { tap: '^2.0.0' },
+701 silly resolved     license: 'ISC',
+701 silly resolved     repository:
+701 silly resolved      { type: 'git',
+701 silly resolved        url: 'git+https://github.com/npm/node-semver.git' },
+701 silly resolved     bin: { semver: './bin/semver' },
+701 silly resolved     gitHead: '8e33a30e62e40e4983d1c5f55e794331b861aadc',
+701 silly resolved     bugs: { url: 'https://github.com/npm/node-semver/issues' },
+701 silly resolved     homepage: 'https://github.com/npm/node-semver#readme',
+701 silly resolved     _id: 'semver@5.1.0',
+701 silly resolved     _shasum: '85f2cf8550465c4df000cf7d86f6b054106ab9e5',
+701 silly resolved     _from: 'semver@^5.1.0',
+701 silly resolved     _npmVersion: '3.3.2',
+701 silly resolved     _nodeVersion: '4.0.0',
+701 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+701 silly resolved     dist:
+701 silly resolved      { shasum: '85f2cf8550465c4df000cf7d86f6b054106ab9e5',
+701 silly resolved        tarball: 'https://registry.npmjs.org/semver/-/semver-5.1.0.tgz' },
+701 silly resolved     maintainers: [ [Object], [Object] ],
+701 silly resolved     directories: {},
+701 silly resolved     _resolved: 'https://registry.npmjs.org/semver/-/semver-5.1.0.tgz',
+701 silly resolved     readme: 'ERROR: No README data found!' },
+701 silly resolved   { name: 'resolve-from',
+701 silly resolved     version: '2.0.0',
+701 silly resolved     description: 'Resolve the path of a module like require.resolve() but from a given path',
+701 silly resolved     license: 'MIT',
+701 silly resolved     repository:
+701 silly resolved      { type: 'git',
+701 silly resolved        url: 'https://github.com/sindresorhus/resolve-from' },
+701 silly resolved     author:
+701 silly resolved      { name: 'Sindre Sorhus',
+701 silly resolved        email: 'sindresorhus@gmail.com',
+701 silly resolved        url: 'sindresorhus.com' },
+701 silly resolved     engines: { node: '>=0.10.0' },
+701 silly resolved     scripts: { test: 'xo && ava' },
+701 silly resolved     files: [ 'index.js' ],
+701 silly resolved     keywords: [ 'require', 'resolve', 'path', 'module', 'from', 'like', 'path' ],
+701 silly resolved     devDependencies: { ava: '*', xo: '*' },
+701 silly resolved     gitHead: '583e0f8df06e1bc4d1c96d8d4f2484c745f522c3',
+701 silly resolved     bugs: { url: 'https://github.com/sindresorhus/resolve-from/issues' },
+701 silly resolved     homepage: 'https://github.com/sindresorhus/resolve-from',
+701 silly resolved     _id: 'resolve-from@2.0.0',
+701 silly resolved     _shasum: '9480ab20e94ffa1d9e80a804c7ea147611966b57',
+701 silly resolved     _from: 'resolve-from@^2.0.0',
+701 silly resolved     _npmVersion: '2.14.7',
+701 silly resolved     _nodeVersion: '4.2.1',
+701 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+701 silly resolved     dist:
+701 silly resolved      { shasum: '9480ab20e94ffa1d9e80a804c7ea147611966b57',
+701 silly resolved        tarball: 'https://registry.npmjs.org/resolve-from/-/resolve-from-2.0.0.tgz' },
+701 silly resolved     maintainers: [ [Object] ],
+701 silly resolved     directories: {},
+701 silly resolved     _resolved: 'https://registry.npmjs.org/resolve-from/-/resolve-from-2.0.0.tgz',
+701 silly resolved     readme: 'ERROR: No README data found!' } ]
+702 info install semver@5.1.0 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+703 info install resolve-from@2.0.0 into /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+704 info installOne semver@5.1.0
+705 info installOne resolve-from@2.0.0
+706 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver unbuild
+707 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/resolve-from unbuild
+708 verbose tar unpack /home/vagrant/.npm/semver/5.1.0/package.tgz
+709 silly lockFile 8f5647a1-ire-optional-node-modules-semver tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver
+710 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver /home/vagrant/.npm/8f5647a1-ire-optional-node-modules-semver.lock
+711 silly lockFile 3b07cc97-ant-npm-semver-5-1-0-package-tgz tar:///home/vagrant/.npm/semver/5.1.0/package.tgz
+712 verbose lock tar:///home/vagrant/.npm/semver/5.1.0/package.tgz /home/vagrant/.npm/3b07cc97-ant-npm-semver-5-1-0-package-tgz.lock
+713 verbose tar unpack /home/vagrant/.npm/resolve-from/2.0.0/package.tgz
+714 silly lockFile 75c696ce-tional-node-modules-resolve-from tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/resolve-from
+715 verbose lock tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/resolve-from /home/vagrant/.npm/75c696ce-tional-node-modules-resolve-from.lock
+716 silly lockFile ebb15e3d-m-resolve-from-2-0-0-package-tgz tar:///home/vagrant/.npm/resolve-from/2.0.0/package.tgz
+717 verbose lock tar:///home/vagrant/.npm/resolve-from/2.0.0/package.tgz /home/vagrant/.npm/ebb15e3d-m-resolve-from-2-0-0-package-tgz.lock
+718 silly gunzTarPerm modes [ '755', '644' ]
+719 silly gunzTarPerm modes [ '755', '644' ]
+720 silly gunzTarPerm extractEntry lib/bson/symbol.js
+721 silly gunzTarPerm extractEntry lib/bson/bson.js
+722 silly gunzTarPerm extractEntry package.json
+723 silly gunzTarPerm extractEntry package.json
+724 silly gunzTarPerm extractEntry .npmignore
+725 silly gunzTarPerm extractEntry README.md
+726 silly gunzTarPerm extractEntry index.js
+727 silly gunzTarPerm extractEntry license
+728 silly gunzTarPerm extractEntry LICENSE
+729 silly gunzTarPerm extractEntry semver.js
+730 silly gunzTarPerm extractEntry bin/semver
+731 silly gunzTarPerm extractEntry .travis.yml
+732 silly gunzTarPerm extractEntry range.bnf
+733 silly gunzTarPerm extractEntry test/big-numbers.js
+734 silly gunzTarPerm extractEntry test/clean.js
+735 silly gunzTarPerm extractEntry test/gtr.js
+736 silly gunzTarPerm extractEntry test/index.js
+737 silly gunzTarPerm extractEntry test/ltr.js
+738 silly gunzTarPerm extractEntry test/major-minor-patch.js
+739 silly gunzTarPerm extractEntry readme.md
+740 silly gunzTarPerm extractEntry lib/bson/regexp.js
+741 silly gunzTarPerm extractEntry lib/bson/binary_parser.js
+742 silly gunzTarPerm extractEntry lib/bson/timestamp.js
+743 silly gunzTarPerm extractEntry lib/bson/long.js
+744 silly gunzTarPerm extractEntry lib/bson/parser/calculate_size.js
+745 silly gunzTarPerm extractEntry lib/bson/parser/deserializer.js
+746 silly gunzTarPerm extractEntry lib/bson/parser/serializer.js
+747 silly lockFile 75c696ce-tional-node-modules-resolve-from tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/resolve-from
+748 silly lockFile 75c696ce-tional-node-modules-resolve-from tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/resolve-from
+749 silly lockFile ebb15e3d-m-resolve-from-2-0-0-package-tgz tar:///home/vagrant/.npm/resolve-from/2.0.0/package.tgz
+750 silly lockFile ebb15e3d-m-resolve-from-2-0-0-package-tgz tar:///home/vagrant/.npm/resolve-from/2.0.0/package.tgz
+751 info preinstall resolve-from@2.0.0
+752 verbose readDependencies using package.json deps
+753 verbose readDependencies using package.json deps
+754 silly resolved []
+755 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/resolve-from
+756 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/resolve-from
+757 verbose linkStuff [ false,
+757 verbose linkStuff   false,
+757 verbose linkStuff   false,
+757 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules' ]
+758 info linkStuff resolve-from@2.0.0
+759 verbose linkBins resolve-from@2.0.0
+760 verbose linkMans resolve-from@2.0.0
+761 verbose rebuildBundles resolve-from@2.0.0
+762 silly gunzTarPerm extractEntry tools/gleak.js
+763 info install resolve-from@2.0.0
+764 info postinstall resolve-from@2.0.0
+765 silly lockFile 8f5647a1-ire-optional-node-modules-semver tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver
+766 silly lockFile 8f5647a1-ire-optional-node-modules-semver tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver
+767 silly lockFile 3b07cc97-ant-npm-semver-5-1-0-package-tgz tar:///home/vagrant/.npm/semver/5.1.0/package.tgz
+768 silly lockFile 3b07cc97-ant-npm-semver-5-1-0-package-tgz tar:///home/vagrant/.npm/semver/5.1.0/package.tgz
+769 info preinstall semver@5.1.0
+770 verbose readDependencies using package.json deps
+771 verbose readDependencies using package.json deps
+772 silly resolved []
+773 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver
+774 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver
+775 verbose linkStuff [ false,
+775 verbose linkStuff   false,
+775 verbose linkStuff   false,
+775 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules' ]
+776 info linkStuff semver@5.1.0
+777 verbose linkBins semver@5.1.0
+778 verbose link bins [ { semver: './bin/semver' },
+778 verbose link bins   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/.bin',
+778 verbose link bins   false ]
+779 verbose linkMans semver@5.1.0
+780 verbose rebuildBundles semver@5.1.0
+781 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/semver unbuild
+782 info preuninstall semver@5.1.0
+783 info uninstall semver@5.1.0
+784 verbose false,/home/vagrant/app/amazeriffic/node_modules,/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules unbuild semver@5.1.0
+785 verbose /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/node_modules/.bin,[object Object] binRoot
+786 info postuninstall semver@5.1.0
+787 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+788 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional unbuild
+789 info preuninstall require_optional@1.0.0
+790 info uninstall require_optional@1.0.0
+791 verbose false,/home/vagrant/app/amazeriffic/node_modules,/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules unbuild require_optional@1.0.0
+792 info postuninstall require_optional@1.0.0
+793 silly lockFile aa7bac08-s-mongodb-core-node-modules-bson tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+794 silly lockFile aa7bac08-s-mongodb-core-node-modules-bson tar:///home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+795 silly lockFile 632a27e5-rant-npm-bson-0-4-23-package-tgz tar:///home/vagrant/.npm/bson/0.4.23/package.tgz
+796 silly lockFile 632a27e5-rant-npm-bson-0-4-23-package-tgz tar:///home/vagrant/.npm/bson/0.4.23/package.tgz
+797 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core
+798 info /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core unbuild
+799 info preuninstall mongodb-core@1.3.16
+800 info uninstall mongodb-core@1.3.16
+801 info preinstall bson@0.4.23
+802 verbose false,/home/vagrant/app/amazeriffic/node_modules,/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules unbuild mongodb-core@1.3.16
+803 info postuninstall mongodb-core@1.3.16
+804 verbose readDependencies using package.json deps
+805 verbose readDependencies using package.json deps
+806 silly resolved []
+807 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+808 info build /home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+809 verbose linkStuff [ false,
+809 verbose linkStuff   false,
+809 verbose linkStuff   false,
+809 verbose linkStuff   '/home/vagrant/app/amazeriffic/node_modules/mongodb/node_modules/mongodb-core/node_modules' ]
+810 info linkStuff bson@0.4.23
+811 verbose linkBins bson@0.4.23
+812 verbose linkMans bson@0.4.23
+813 verbose rebuildBundles bson@0.4.23
+814 info install bson@0.4.23
+815 info postinstall bson@0.4.23
+816 verbose about to build /home/vagrant/app/amazeriffic/node_modules/mongodb
+817 info /home/vagrant/app/amazeriffic/node_modules/mongodb unbuild
+818 info preuninstall mongodb@2.1.16
+819 info uninstall mongodb@2.1.16
+820 verbose true,/home/vagrant/app/amazeriffic/node_modules,/home/vagrant/app/amazeriffic/node_modules unbuild mongodb@2.1.16
+821 info postuninstall mongodb@2.1.16
+822 error Error: UNKNOWN, symlink '../semver/bin/semver'
+823 error If you need help, you may report this *entire* log,
+823 error including the npm and node versions, at:
+823 error     <http://github.com/npm/npm/issues>
+824 error System Linux 3.2.0-23-generic-pae
+825 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mongodb"
+826 error cwd /home/vagrant/app/amazeriffic
+827 error node -v v0.10.29
+828 error npm -v 1.4.14
+829 error path ../semver/bin/semver
+830 error code UNKNOWN
+831 error errno -1
+832 verbose exit [ -1, true ]

@@ -1,0 +1,122 @@
+h1 {
+	font-size: 200%;
+	font-weight; bold;
+}
+h5 {
+	font-size: 125%;
+	/*border-bottom: 1px dashed black;*/
+}
+p {
+	line-height: 36px;
+}
+.right {
+	text-align: right;
+	margin-right: 100px;
+}
+body {
+	background: #fff;
+}
+header, main, footer {
+	min-width: 855px;
+}
+header .container, main .container, footer .container {
+	min-width: 855px;
+	margin: auto;
+}
+header {
+	background: white;
+	overflow: auto;
+	border-bottom: 1px solid black;
+	margin: 30px;
+}
+header h1 {
+	float: left;
+	width: 570px;
+}
+header nav {
+	float: right;
+	width: 285px;
+}
+main {
+	background: white;
+}
+main .container {
+	padding: 15px;
+	background-color: #ebebeb;
+}
+main .tabs {
+	margin-left: 15px;
+}
+
+main .container div {
+	border: 2px solid black;
+	margin: 5px;
+	border-radius: 5px;
+}
+.tabs a span {
+	color: #000;
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	width: 100px;
+	margin-right: 10px;
+	text-align: center;
+	background: #ddd;
+	padding: 5px;
+}
+.tabs a span.active {
+	background: #eee;
+}
+.container ul li {
+	background: #ccc;
+	border-radius: 5px;
+	margin: 3px;
+	padding: 3px;
+	padding-left: 15px;
+}
+.tag h3 {
+	color: #000;
+	font-weight: bold;
+	font-size: 150%;
+	margin: 3px;
+	margin-left: 10px;
+}
+.container ul li a {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	float: right;
+}
+.container .addBox {
+	padding: 15px;
+}
+.container .addBox span {
+	display: inline-block;
+	text-align: right;
+	width: 75px;
+	padding-right: 15px;
+	margin-bottom: 5px;
+}
+.container .addBox input {
+	width: 155px;
+}
+.container .addBox button {
+	width: 250px;
+}
+footer {
+	height: 200px;
+	background: #f9e933;
+}
+footer .contact {
+	float: left;
+	width: 570px;
+	margin: 35px;
+}
+footer .contact  div p {
+	margin: 5px;
+	line-height: 16px;
+}
+footer .sitemap {
+	float: right;
+	width: 285px;
+	margin: 35px;
+}

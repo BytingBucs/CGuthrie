@@ -94,7 +94,7 @@ var main = function (toDoObjects) {
                     $inputLabel = $("<p>").text("Description: "),
                     $tagInput = $("<input>").addClass("tags"),
                     $tagLabel = $("<p>").text("Tags: "),
-                    $button = $("<button>").text("+"),
+                    $button = $('<button class="add">').text("+"),
                     $content = $("<div>");
                 
                 $button.on("click", function () {
