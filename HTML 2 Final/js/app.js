@@ -36,8 +36,8 @@ var main = function () {
             contact.FirstName+"</td><td>" +
             contact.LastName+"</td><td>" +
             contact.Company+"</td><td>" +
-            '<a href="mailto:'+contact.EmailAddress+'">'+contact.EmailAddress+"</a></td><td>" +
             contact.JobTitle+"</td><td>" +
+            '<a href="mailto:'+contact.EmailAddress+'">'+contact.EmailAddress+"</a></td><td>" +
             contact.BusinessPhone+"</td></tr>";
 
         //$list.append($contact);
